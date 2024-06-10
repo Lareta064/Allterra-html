@@ -1,0 +1,13 @@
+<svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="24" height="16" fill="white"/>
+<rect width="24" height="1.14872" fill="#AF010D"/>
+<rect y="2.29785" width="24" height="1.14872" fill="#AF010D"/>
+<rect y="4.59473" width="24" height="1.14872" fill="#AF010D"/>
+<rect y="6.89258" width="24" height="1.14872" fill="#AF010D"/>
+<rect y="9.18945" width="24" height="1.14872" fill="#AF010D"/>
+<rect y="11.4873" width="24" height="1.14872" fill="#AF010D"/>
+<rect y="13.7842" width="24" height="1.14872" fill="#AF010D"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H12.5714V9.19467H0V0Z" fill="#1A47B8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.2666H9.14286V5.33327H8V4.2666Z" fill="#FFDA2C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.57059 6.40046C8.04945 7.04792 7.21973 7.46712 6.28488 7.46712C4.70773 7.46712 3.42773 6.27246 3.42773 4.80046C3.42773 3.32846 4.70773 2.13379 6.28488 2.13379C7.21973 2.13379 8.04945 2.55299 8.57059 3.20046H6.85631C5.91002 3.20046 5.14202 3.91726 5.14202 4.80046C5.14202 5.68366 5.91002 6.40046 6.85631 6.40046H8.57059Z" fill="#FFDA2C"/>
+</svg>
