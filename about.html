@@ -1,5 +1,3 @@
-<!--=======Миксин не сделан ========-->
-<!--======//====== NAVIGATION ===== ======-->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -9,16 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--=======убрать перевод цифр в номер телефона на ios  и safari ======-->
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="./fonts/fonts.css">
   <!--========= swiper slider ==============-->
   <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
   <!--========= custom styles ========-->
   <link rel="stylesheet" href="./css/main.css">
   <title>Главная</title>
+  <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Medium.woff2) format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-SemiBold.woff2) format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Bold.woff2) format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="overlay"></div>
   <!--========== HEADER =========-->
   <header class="header">
     <div class="header-search-popup flex-center-x" id="search-popup">
@@ -44,7 +74,7 @@
     <div class="header-top">
       <div class="container">
         <div class="header-flex">
-          <!--======//====== NAVIGATION ===== ======-->
+          <!--====== NAVIGATION =====-->
           <nav class="header-nav">
             <ul>
               <!--======single LI====-->
@@ -72,10 +102,10 @@
                       <a href="services.html">Все услуги</a>
                     </li>
                     <li>
-                      <a href="undefined">Отзывы</a>
+                      <a href="#!">Отзывы</a>
                     </li>
                     <li>
-                      <a href="undefined">Контакты</a>
+                      <a href="#!">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -86,16 +116,16 @@
                 <div class="drop-menu-wrapper">
                   <ul>
                     <li>
-                      <a href="undefined">Поступление в школу</a>
+                      <a href="#!">Поступление в школу</a>
                     </li>
                     <li>
-                      <a href="undefined">Поступление в университет</a>
+                      <a href="#!">Поступление в университет</a>
                     </li>
                     <li>
-                      <a href="undefined">Каникулы за рубежом</a>
+                      <a href="#!">Каникулы за рубежом</a>
                     </li>
                     <li>
-                      <a href="undefined">Искусство и дизайн</a>
+                      <a href="#!">Искусство и дизайн</a>
                     </li>
                   </ul>
                 </div>
@@ -111,27 +141,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/irl.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
                           <span>Ирландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/malta.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
                           <span>Мальта</span>
                         </a>
                       </div>
@@ -142,27 +184,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/swich.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
                           <span>Швейцария</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fr.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
                           <span>Франция</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/nid.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
                           <span>Голландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fin.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
                           <span>Финлядия</span>
                         </a>
                       </div>
@@ -173,27 +227,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/sing.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
                           <span>Сингапур</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/oae.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
                           <span>ОАЭ</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/tln.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-thail">
+                            <use href="./img/flags-sprite.svg#fl-thail"></use>
+                          </svg>
                           <span>Тайланд</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/kor.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
                           <span>Южная Корея</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/mls.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
                           <span>Малайзия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/china.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
                           <span>Китай</span>
                         </a>
                       </div>
@@ -266,27 +332,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                       </div>
@@ -358,27 +436,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                       </div>
@@ -420,27 +510,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/irl.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
                           <span>Ирландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/malta.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
                           <span>Мальта</span>
                         </a>
                       </div>
@@ -451,27 +553,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/swich.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
                           <span>Швейцария</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fr.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
                           <span>Франция</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/nid.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
                           <span>Голландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fin.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
                           <span>Финлядия</span>
                         </a>
                       </div>
@@ -482,27 +596,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/sing.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
                           <span>Сингапур</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/oae.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
                           <span>ОАЭ</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/tln.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-tln">
+                            <use href="./img/flags-sprite.svg#fl-tln"></use>
+                          </svg>
                           <span>Тайланд</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/kor.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
                           <span>Южная Корея</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/mls.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
                           <span>Малайзия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/china.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
                           <span>Китай</span>
                         </a>
                       </div>
@@ -1015,7 +1141,7 @@
             <div class="swiper-wrapper">
               <!--===== single slide ========-->
               <div class="swiper-slide">
-                <div class="review-card bx-sh">
+                <div class="review-card">
                   <div class="person">
                     <!--====== top row =====-->
                     <div class="person__info">
@@ -1031,27 +1157,35 @@
                           <p>Генеральный директор ГК «АК-Сервис»</p>
                         </div>
                         <div class="person__links">
-                          <a class="accent-link" href="#!">Ringling College of Art</a>
                           <a class="pin-item" href="#!">США</a>
+                          <a class="accent-link" href="#!">Ringling College of Art</a>
+                        </div>
+                        <!--====== теги для десктоп версии ======-->
+                        <div class="tags-list">
+                          <a href="#!">#среднее_образование</a>
+                          <a href="#!">#родитель</a>
                         </div>
                       </div>
                     </div>
                     <!--====== text row =====-->
                     <div class="person__txt">
+                      <!--====== теги для моб версии ======-->
+                      <div class="tags-list">
+                        <a href="#!">#среднее_образование</a>
+                        <a href="#!">#родитель</a>
+                      </div>
                       <p>Я работаю с командой Allterra Education на протяжении 6 лет. За это время я успел сам побывать студентом и поучить английский в Санта-Барбаре. Обе мои дочери были рады попасть в универс</p>
-                      <a class="accent-link und-line" href="#!">Читать далее</a>
-                    </div>
-                    <!--======= for mobile =====-->
-                    <div class="person__meta">
-                      <div class="person__date">02.02.2024</div>
-                      <a class="pin-item" href="#!">США</a>
+                      <div class="person__meta">
+                        <a class="accent-link und-line" href="#!">Читать далее</a>
+                        <div class="person__date">02.02.2024</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <!--=====single slide ========-->
               <div class="swiper-slide">
-                <div class="review-card bx-sh">
+                <div class="review-card">
                   <div class="person">
                     <!--====== top row =====-->
                     <div class="person__info">
@@ -1064,26 +1198,34 @@
                           <div class="person__date">02.02.2024</div>
                         </div>
                         <div class="person__links">
-                          <a class="accent-link" href="#!">Sidcot School</a>
                           <a class="pin-item" href="#!">Великобритания</a>
+                          <a class="accent-link" href="#!">Sidcot School</a>
+                        </div>
+                        <!--====== теги для десктоп версии ======-->
+                        <div class="tags-list">
+                          <a href="#!">#среднее_образование</a>
+                          <a href="#!">#студент</a>
                         </div>
                       </div>
                     </div>
                     <!--====== text row =====-->
                     <div class="person__txt">
+                      <!--====== теги для моб версии ======-->
+                      <div class="tags-list">
+                        <a href="#!">#среднее_образование</a>
+                        <a href="#!">#студент</a>
+                      </div>
                       <p>Я могу рекомендовать компанию Allterra Education всем, кто планирует отправлять ребенка в Великобританию.</p>
-                    </div>
-                    <!--======= for mobile =====-->
-                    <div class="person__meta">
-                      <div class="person__date">02.02.2024</div>
-                      <a class="pin-item" href="#!">Великобритания</a>
+                      <div class="person__meta">
+                        <div class="person__date">02.02.2024</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <!--===== single slide ========-->
               <div class="swiper-slide">
-                <div class="review-card bx-sh">
+                <div class="review-card">
                   <div class="person">
                     <!--====== top row =====-->
                     <div class="person__info">
@@ -1096,26 +1238,34 @@
                           <div class="person__date">02.02.2024</div>
                         </div>
                         <div class="person__links">
-                          <a class="accent-link" href="#!">Queen Ethelburga's Collegiate</a>
                           <a class="pin-item" href="#!">Австралия</a>
+                          <a class="accent-link" href="#!">Queen Ethelburga's Collegiate</a>
+                        </div>
+                        <!--====== теги для десктоп версии ======-->
+                        <div class="tags-list">
+                          <a href="#!">#среднее_образование</a>
+                          <a href="#!">#студент</a>
                         </div>
                       </div>
                     </div>
                     <!--====== text row =====-->
                     <div class="person__txt">
+                      <!--====== теги для моб версии ======-->
+                      <div class="tags-list">
+                        <a href="#!">#среднее_образование</a>
+                        <a href="#!">#студент</a>
+                      </div>
                       <p>Два года в школе пролетели незаметно, я завел очень много друзей и смог значительно улучшить свой английский.</p>
-                    </div>
-                    <!--======= for mobile =====-->
-                    <div class="person__meta">
-                      <div class="person__date">02.02.2024</div>
-                      <a class="pin-item" href="#!">Австралия</a>
+                      <div class="person__meta">
+                        <div class="person__date">02.02.2024</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <!--=====single slide ========-->
               <div class="swiper-slide">
-                <div class="review-card bx-sh">
+                <div class="review-card">
                   <div class="person">
                     <!--====== top row =====-->
                     <div class="person__info">
@@ -1128,19 +1278,27 @@
                           <div class="person__date">02.02.2024</div>
                         </div>
                         <div class="person__links">
-                          <a class="accent-link" href="#!">Giggleswick School</a>
                           <a class="pin-item" href="#!">Германия</a>
+                          <a class="accent-link" href="#!">Giggleswick School</a>
+                        </div>
+                        <!--====== теги для десктоп версии ======-->
+                        <div class="tags-list">
+                          <a href="#!">#среднее_образование</a>
+                          <a href="#!">#родитель</a>
                         </div>
                       </div>
                     </div>
                     <!--====== text row =====-->
                     <div class="person__txt">
+                      <!--====== теги для моб версии ======-->
+                      <div class="tags-list">
+                        <a href="#!">#среднее_образование</a>
+                        <a href="#!">#родитель</a>
+                      </div>
                       <p>Все критерии, по которым мы выбирали школу, совпали.</p>
-                    </div>
-                    <!--======= for mobile =====-->
-                    <div class="person__meta">
-                      <div class="person__date">02.02.2024</div>
-                      <a class="pin-item" href="#!">Германия</a>
+                      <div class="person__meta">
+                        <div class="person__date">02.02.2024</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1224,7 +1382,7 @@
     <!--============ CONTACTS ================-->
     <section class="contacts dark-bg">
       <div class="container">
-        <form class="contacts-form form-opacity">
+        <form class="contacts-form dark-opacity">
           <p class="h3">Задать вопрос</p>
           <div class="form_field">
             <input type="text" name="name" placeholder="Ваше имя*">

@@ -1,5 +1,3 @@
-<!--=======Миксин не сделан ========-->
-<!--======//====== NAVIGATION ===== ======-->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -9,16 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--=======убрать перевод цифр в номер телефона на ios  и safari ======-->
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="./fonts/fonts.css">
   <!--========= swiper slider ==============-->
   <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
   <!--========= custom styles ========-->
   <link rel="stylesheet" href="./css/main.css">
-  <title>Partner's zone</title>
+  <title>Страны</title>
+  <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Medium.woff2) format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-SemiBold.woff2) format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Bold.woff2) format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="overlay"></div>
   <!--========== HEADER =========-->
   <header class="header">
     <div class="header-search-popup flex-center-x" id="search-popup">
@@ -44,7 +74,7 @@
     <div class="header-top">
       <div class="container">
         <div class="header-flex">
-          <!--======//====== NAVIGATION ===== ======-->
+          <!--====== NAVIGATION =====-->
           <nav class="header-nav">
             <ul>
               <!--======single LI====-->
@@ -72,10 +102,10 @@
                       <a href="services.html">Все услуги</a>
                     </li>
                     <li>
-                      <a href="undefined">Отзывы</a>
+                      <a href="#!">Отзывы</a>
                     </li>
                     <li>
-                      <a href="undefined">Контакты</a>
+                      <a href="#!">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -86,16 +116,16 @@
                 <div class="drop-menu-wrapper">
                   <ul>
                     <li>
-                      <a href="undefined">Поступление в школу</a>
+                      <a href="#!">Поступление в школу</a>
                     </li>
                     <li>
-                      <a href="undefined">Поступление в университет</a>
+                      <a href="#!">Поступление в университет</a>
                     </li>
                     <li>
-                      <a href="undefined">Каникулы за рубежом</a>
+                      <a href="#!">Каникулы за рубежом</a>
                     </li>
                     <li>
-                      <a href="undefined">Искусство и дизайн</a>
+                      <a href="#!">Искусство и дизайн</a>
                     </li>
                   </ul>
                 </div>
@@ -111,27 +141,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/irl.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
                           <span>Ирландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/malta.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
                           <span>Мальта</span>
                         </a>
                       </div>
@@ -142,27 +184,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/swich.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
                           <span>Швейцария</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fr.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
                           <span>Франция</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/nid.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
                           <span>Голландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fin.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
                           <span>Финлядия</span>
                         </a>
                       </div>
@@ -173,27 +227,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/sing.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
                           <span>Сингапур</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/oae.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
                           <span>ОАЭ</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/tln.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-thail">
+                            <use href="./img/flags-sprite.svg#fl-thail"></use>
+                          </svg>
                           <span>Тайланд</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/kor.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
                           <span>Южная Корея</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/mls.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
                           <span>Малайзия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/china.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
                           <span>Китай</span>
                         </a>
                       </div>
@@ -266,27 +332,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                       </div>
@@ -358,27 +436,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                       </div>
@@ -420,27 +510,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/irl.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
                           <span>Ирландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/malta.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
                           <span>Мальта</span>
                         </a>
                       </div>
@@ -451,27 +553,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/swich.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
                           <span>Швейцария</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fr.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
                           <span>Франция</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/nid.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
                           <span>Голландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fin.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
                           <span>Финлядия</span>
                         </a>
                       </div>
@@ -482,27 +596,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/sing.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
                           <span>Сингапур</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/oae.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
                           <span>ОАЭ</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/tln.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-tln">
+                            <use href="./img/flags-sprite.svg#fl-tln"></use>
+                          </svg>
                           <span>Тайланд</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/kor.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
                           <span>Южная Корея</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/mls.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
                           <span>Малайзия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/china.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
                           <span>Китай</span>
                         </a>
                       </div>
@@ -588,138 +714,393 @@
               <a href="#!">Главная</a>
             </li>
             <li>
-              <a href="#!">Partner's zone</a>
+              <a href="#!">Страны</a>
             </li>
           </ul>
           <div class="hero-title">
-            <h1 class="title">Partner's zone
-              <br>
-              <span class='accent-border'> Allterra&nbsp;Education </span>
-            </h1>
+            <h1 class="title">Страны</h1>
+            <p class="header-subtitle">Выберите страну для обучения из каталога</p>
           </div>
           <!--===== bottom text =====-->
           <div class="hero-bottom">
-            <a class="back-link" href="#!">
-              <svg class="svg-chevron">
-                <use href="./img/spriteSvg.svg#svg-chevron"></use>
-              </svg>
-              <span>Назад</span>
-            </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="cooperation">
-      <div class="container-narrow">
-        <div class="custom-text">
-          <p>We are glad that you are considering working with us.</p>
-          <p>Allterra Education is a leading education abroad consultancy based in Russia. Launched by industry professionals in 2013, we’ve grown to become the company with an acquired distinctiveness.</p>
-          <p>Please learn more about our team, services and possible cooperation options.</p>
-          <div class="video">
-            <video>
-              <source src="./video/Partner_s_zone.mp4" type="video/mp4">
-            </video>
+    <!--======= COUNTRIES ===========-->
+    <section class="countries">
+      <div class="container">
+        <!--==== строка с меню и кнопкой ======-->
+        <div class="countries-row flex-justify">
+          <!--=====ссылки к якорям на странице =====-->
+          <div class="countries-menu flex-center-y">
+            <a class="accent-link" href="#en-cntr">Англоговорящие</a>
+            <a class="accent-link" href="#euro-cntr">Европа</a>
+            <a class="accent-link" href="#asia-cntr">Азия</a>
           </div>
+          <!--======= Получить консультацию ==========-->
+          <a class="btn-accent" href="#!">Получить консультацию</a>
         </div>
-      </div>
-      <!--======= Руководство ========-->
-      <section class="chief light-bg">
-        <div class="container">
-          <h2 class="section-title">Руководство компании</h2>
-          <div class="chief-cards two-columns-1024">
-            <!--========= single card ===========-->
-            <div class="chief-card">
-              <div class="person">
-                <!--====== top row =====-->
-                <div class="person__info">
-                  <div class="person__photo">
-                    <img class="wh-100 lazy" src="./img/boss/boss1.webp" width="295" alt="img" />
-                  </div>
-                  <div class="person__details">
-                    <div class="flex-center-y">
-                      <div class="person__name">Гречко Владимир Ильич</div>
-                    </div>
-                    <div class="person__range">
-                      <p>Генеральный директор</p>
-                      <p>Опыт работы 27 лет</p>
-                    </div>
-                    <div class="person__links">
-                      <a class="accent-link" href="#!">grechko@allterra.ru</a>
-                    </div>
-                  </div>
-                </div>
+        <!--=========== BLOCK ENGL ===========-->
+        <article class="two-columns-1280" id="en-cntr">
+          <!--=====left columns=====-->
+          <div class="country-desk">
+            <div class="country-desk__header flex-center-y">
+              <img src="./img/countries/1.webp" width="212" height="212" alt="alt">
+              <div class="country-desk__txt">
+                <div class="h3">Англоговорящие страны</div>
+                <p class="txt-16">2683 успешных поступления</p>
               </div>
             </div>
-            <div class="chief-card">
-              <div class="person">
-                <!--====== top row =====-->
-                <div class="person__info">
-                  <div class="person__photo">
-                    <img class="wh-100 lazy" src="./img/boss/boss2.webp" width="295" alt="img" />
-                  </div>
-                  <div class="person__details">
-                    <div class="flex-center-y">
-                      <div class="person__name">Бякишева Марина Леонидовна</div>
-                    </div>
-                    <div class="person__range">
-                      <p>Генеральный директор</p>
-                      <p>Опыт работы 27 лет</p>
-                    </div>
-                    <div class="person__links">
-                      <a class="accent-link" href="#!">grechko@allterra.ru</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="txt-body mb-48">
+              <div class="txt-20 mb-20">Самое популярное направление для образования за рубежом</div>
+              <p>Ежегодно в США, Австралию, Великобританию и Канаду приезжают на учебу 3 млн иностранных студентов. Здесь самый большой выбор программ на английском, лучшие условия для нетворкинга и старта международной карьеры.</p>
+            </div>
+            <div class="country-desk__footer flex-center-y">
+              <p class="title accent-txt">127</p>
+              <p class="txt-16">вузов из мирового рейтинга топ-300 расположены в англоязычных странах</p>
             </div>
           </div>
-        </div>
-      </section>
-      <div class="container-narrow">
-        <div class="custom-text">
-          <h2>THE TEAM</h2>
-          <p>Our full-time advisors have years of experience in education abroad consulting (5 is the minimum) and a lot of professional training. They are backed by teams of sales and marketing specialists, customer success managers, digital editors and IT.</p>
-          <p>Our team is our asset. Many of us studied abroad and developed a truly global perspective.</p>
-          <p>We fully share our students' thirst for knowledge and commitment to personal growth.</p>
-          <h2>THE CLIENTELE</h2>
-          <p>Our customers are top executives and business owners based in Russia and CIS. They look mostly for intensive English language training, boarding schools and universities for their children.</p>
-          <p>We have lots of amazing cases – a bright Oxbridge candidate with an unfortunate exam result, a SEN student applying to Harvard, an Olympic athlete looking for a top business school, a lawyer dreaming of a medical career. We have a record of helping students like that to achieve their goals (and even surpass them).</p>
-          <p>We pride ourselves on being located in St. Petersburg, the Russian capital of culture. Our corporate identity and customer mix are very much influenced by our city of origin.</p>
-          <p>You will love our students – they are motivated, intelligent and make a great contribution to a school's community.</p>
-          <h2>STUDY DESTINATIONS</h2>
-          <p>Our portfolio includes 40+ countries: we recruit for institutions based in Europe, North America, Middle East and South-East Asia.</p>
-          <p>Based on the total number of students enrolled into full-time studies, our European top-5 is made of the UK, Germany, Spain, Ireland and France.</p>
-          <p>We invest heavily into new partnerships in the Middle East and Asia, and in 2022 this reached new frontiers. Our key markets include UAE, Malaysia, Singapore, China and South Korea.</p>
-          <h2>ACCREDITATIONS</h2>
-          <p>We have 11 I international accreditations including ICEF (2013-2022), EnglishUK, Quality English and the British Boarding Schools Network.</p>
-          <p>Our consultants are vetted by the British Council and work in compliance with their code of conduct.</p>
-          <h2>SERVICES</h2>
-          <h3>Consulting</h3>
-          <p>The stage includes pre-screening (student's motivation, academic performance, and reliability), and diagnostic assessment. We help our customers to compare educational systems, choose a study destination, build a shortlist of options and a working road map.</p>
-          <h3>Admission to boarding schools & universities</h3>
-          <p>We provide advice on supporting documents and the process itself, help to apply in a timely manner and to prepare to any exam. Also, as British Council certified agency we invigilate the entry tests in our office.</p>
-          <h3>Pre-departure guidance</h3>
-          <p>We help to complete the visa application and provide post-guarantee support in an unlikely case of refusal. We also provide guidance on steps before arrival and arrange the students’ journey in compliance with current covid regulations.</p>
-          <h3>Guardianship</h3>
-          <p>Our guardians in the UK tackle all the problems that might occur during the study process and provide an extra level of care and support for the students, as well as a piece of mind for their parents.</p>
-          <h2>OUR PARTNERS</h2>
-          <p>We work with excellent schools and universities in Europe and Northern America, and this is the area we are most interested in developing further.</p>
-          <p>We don't aim to have as many business links as we can - we prefer to build long-term relationships with selected partners that share our vision and work in the same niche.</p>
-          <p>Our partners benefit from:</p>
-          <ul>
-            <li>careful students’ pre-screening</li>
-            <li>responsible business approach</li>
-            <li>effective marketing solutions.</li>
-          </ul>
-          <p>If you would like to discuss our cooperation, please send your enquiry to contact@allterra.ru or fill the form below.</p>
-          <p>If you would like to explore the marketing opportunities we offer, order a copy of our media kit or talk to a member of staff please send your enquiry to marketing@allterra.ru.</p>
-          <h2>OUR DIFFERENCE</h2>
-          <ul>
-            <li>We rely on highly trained staff who serve the needs of the most demanding audience</li>
-            <li>We respect rules and ethical norms</li>
-            <li>We love what we do, and our clients and partners benefit from it.</li>
-          </ul>
-        </div>
+          <!--=====right columns=====-->
+          <div class="country-flags">
+            <a class="country-link" href="#!">
+              <svg class="fl-uk">
+                <use href="./img/flags-sprite.svg#fl-uk"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Великобритания</div>
+                <p>Учебных заведений: 306</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-usa">
+                <use href="./img/flags-sprite.svg#fl-usa"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">США</div>
+                <p>Учебных заведений: 136</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-irl">
+                <use href="./img/flags-sprite.svg#fl-irl"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Ирландия</div>
+                <p>Учебных заведений: 35</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-can">
+                <use href="./img/flags-sprite.svg#fl-can"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Канада</div>
+                <p>Учебных заведений: 30</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-aus">
+                <use href="./img/flags-sprite.svg#fl-aus"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Австралия</div>
+                <p>Учебных заведений: 12</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-malta">
+                <use href="./img/flags-sprite.svg#fl-malta"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Мальта</div>
+                <p>Учебных заведений: 1</p>
+              </div>
+            </a>
+          </div>
+        </article>
+        <!--=========== BLOCK EUROPE ===========-->
+        <article class="two-columns-1280" id="euro-cntr">
+          <!--=====left columns=====-->
+          <div class="country-desk">
+            <div class="country-desk__header flex-center-y">
+              <img src="./img/countries/2.webp" width="212" height="212" alt="alt">
+              <div class="country-desk__txt">
+                <div class="h3">Европа</div>
+                <p class="txt-16">734 успешных поступления</p>
+              </div>
+            </div>
+            <div class="txt-body mb-48">
+              <div class="txt-20 mb-20">Классика, проверенная временем</div>
+              <p>В Европе можно получить фундаментальное образование или выбрать вуз с ориентацией на рынок труда. Европейские дипломы признаются во всем мире, а выпускники владеют минимум двумя иностранными языками.</p>
+            </div>
+            <div class="country-desk__footer flex-center-y">
+              <p class="title accent-txt">86</p>
+              <p class="txt-16">вузов из мирового рейтинга топ-300 расположены в Европе</p>
+            </div>
+          </div>
+          <!--=====right columns=====-->
+          <div class="country-flags">
+            <a class="country-link" href="#!">
+              <svg class="fl-swet">
+                <use href="./img/flags-sprite.svg#fl-swet"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Швейцария</div>
+                <p>Учебных заведений: 45</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-spain">
+                <use href="./img/flags-sprite.svg#fl-spain"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Испания</div>
+                <p>Учебных заведений: 38</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-de">
+                <use href="./img/flags-sprite.svg#fl-de"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Германия</div>
+                <p>Учебных заведений: 61</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-fr">
+                <use href="./img/flags-sprite.svg#fl-fr"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Франция</div>
+                <p>Учебных заведений: 24</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-netherl">
+                <use href="./img/flags-sprite.svg#fl-netherl"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Нидерланды</div>
+                <p>Учебных заведений: 18</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-fin">
+                <use href="./img/flags-sprite.svg#fl-fin"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Финляндия</div>
+                <p>Учебных заведений: 26</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-ital">
+                <use href="./img/flags-sprite.svg#fl-ital"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Италия</div>
+                <p>Учебных заведений: 19</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-austria">
+                <use href="./img/flags-sprite.svg#fl-austria"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Австрия</div>
+                <p>Учебных заведений: 7</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-czech">
+                <use href="./img/flags-sprite.svg#fl-czech"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Чехия</div>
+                <p>Учебных заведений: 3</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-cy">
+                <use href="./img/flags-sprite.svg#fl-cy"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Кипр</div>
+                <p>Учебных заведений: 13</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-ru">
+                <use href="./img/flags-sprite.svg#fl-ru"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Россия</div>
+                <p>Учебных заведений: 11</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-bulg">
+                <use href="./img/flags-sprite.svg#fl-bulg"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Болгария</div>
+                <p>Учебных заведений: 1</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-port">
+                <use href="./img/flags-sprite.svg#fl-port"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Португалия</div>
+                <p>Учебных заведений: 2</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-belg">
+                <use href="./img/flags-sprite.svg#fl-belg"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Бельгия</div>
+                <p>Учебных заведений: 2</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-hun">
+                <use href="./img/flags-sprite.svg#fl-hun"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Венгрия</div>
+                <p>Учебных заведений: 2</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-slov">
+                <use href="./img/flags-sprite.svg#fl-slov"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Словакия</div>
+                <p>Учебных заведений: </p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-serb">
+                <use href="./img/flags-sprite.svg#fl-serb"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Сербия</div>
+                <p>Учебных заведений: 2</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-latv">
+                <use href="./img/flags-sprite.svg#fl-latv"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Латвия</div>
+                <p>Учебных заведений: 4</p>
+              </div>
+            </a>
+          </div>
+        </article>
+        <!--=========== BLOCK ASIA ===========-->
+        <article class="two-columns-1280" id="asia-cntr">
+          <!--=====left columns=====-->
+          <div class="country-desk">
+            <div class="country-desk__header flex-center-y">
+              <img src="./img/countries/3.webp" width="212" height="212" alt="alt">
+              <div class="country-desk__txt">
+                <div class="h3">Азия</div>
+                <p class="txt-16">307 успешных поступления</p>
+              </div>
+            </div>
+            <div class="txt-body mb-48">
+              <div class="txt-20 mb-20">Страны с высокими темпами развития, где образование играет ключевую роль </div>
+              <p>ОАЭ, Сингапур, Южная Корея и другие страны Азии сейчас на пике популярности. Только в ОАЭ 40+ кампусов американских и британских вузов. Здесь можно получить современное образование полностью на английском языке.</p>
+            </div>
+            <div class="country-desk__footer flex-center-y">
+              <p class="title accent-txt">72</p>
+              <p class="txt-16">вуза из мирового рейтинга топ-300 расположены в Азии</p>
+            </div>
+          </div>
+          <!--=====right columns=====-->
+          <div class="country-flags">
+            <a class="country-link" href="#!">
+              <svg class="fl-sing">
+                <use href="./img/flags-sprite.svg#fl-sing"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Сингапур</div>
+                <p>Учебных заведений: 1</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-oae">
+                <use href="./img/flags-sprite.svg#fl-oae"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">ОАЭ</div>
+                <p>Учебных заведений: 52</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-thail">
+                <use href="./img/flags-sprite.svg#fl-thail"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Таиланд</div>
+                <p>Учебных заведений: 6</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-kor">
+                <use href="./img/flags-sprite.svg#fl-kor"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Корея</div>
+                <p>Учебных заведений: 15</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-malasia">
+                <use href="./img/flags-sprite.svg#fl-malasia"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Малайзия</div>
+                <p>Учебных заведений: 22</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-china">
+                <use href="./img/flags-sprite.svg#fl-china"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Китай</div>
+                <p>Учебных заведений: 11</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-turk">
+                <use href="./img/flags-sprite.svg#fl-turk"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Турция</div>
+                <p>Учебных заведений: 9</p>
+              </div>
+            </a>
+            <a class="country-link" href="#!">
+              <svg class="fl-phil">
+                <use href="./img/flags-sprite.svg#fl-phil"></use>
+              </svg>
+              <div class="country-link__txt">
+                <div class="h5">Филлипины</div>
+                <p>Учебных заведений: 1</p>
+              </div>
+            </a>
+          </div>
+        </article>
       </div>
     </section>
     <!--============ STATISTICS ===================-->

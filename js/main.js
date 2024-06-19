@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function (){
 		const videoContent = videoBox.querySelector('#video');
 		const videoToggleBtn = videoBox.querySelector('#video-btn');
 		
-		videoToggleBtn.addEventListener('click', ()=>{
+		videoContent.addEventListener('click', ()=>{
 			if(!videoToggleBtn.classList.contains('active')){
 				videoContent.pause();
 				videoToggleBtn.classList.add('active');
@@ -21,6 +21,11 @@ document.addEventListener("DOMContentLoaded", function (){
 				videoToggleBtn.querySelector('span').textContent = 'Приостановить видео';
 			}
 		});
+		videoContent.addEventListener("ended", function () {
+			videoContent.pause();
+			videoToggleBtn.classList.add('active');
+			videoToggleBtn.querySelector('span').textContent = 'Возобновить видео';
+		});
 	}
 	/*========Partners'Zone  VIDEO============ */
 	const videoBlock = document.querySelector('.video');
@@ -30,12 +35,14 @@ document.addEventListener("DOMContentLoaded", function (){
 			if(videoBlock.classList.contains('active')){
 				videoBlockContent.pause();
 				videoBlock.classList.remove('active');
-				
-				
 			}else{
 				videoBlockContent.play();
 				videoBlock.classList.add('active');
 			}
+		});
+		videoBlock.addEventListener("ended", function () {
+			videoBlockContent.pause();
+			videoBlock.classList.remove('active');
 		});
 	}
 	/*==============FOR HEADER SEARCH FORM ============= */
@@ -57,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function (){
 		mobileMenu.classList.remove('active');
 		menuToggle.classList.remove('active');
 	}
-		if(openSearchForm){
+	if(openSearchForm){
 		openSearchForm.addEventListener('click', ()=>{
 			
 			if(searchFormPopup.classList.contains('active')){
@@ -102,11 +109,11 @@ document.addEventListener("DOMContentLoaded", function (){
 				menuToggle.classList.add('active');
 			    mobileMenu.classList.add('active');
 				bodyEl.classList.add('lock');
-				console.log('123');
+				
 				if(window.scrollY > 500 ){
-					console.log('345');
+					
 					fixedButtons.classList.remove('active');
-					console.log(fixedButtons.classList);
+					
 				}
 			}
 		});
@@ -154,7 +161,10 @@ document.addEventListener("DOMContentLoaded", function (){
 			ths.find('.tab-btn').removeClass('active').eq($(this).index()).addClass('active');
 			ths.find('.custom-tab').hide().eq($(this).index()).fadeIn()
 		}).eq(0).addClass('active');
+		
 	});
+
+
 	/*============== ACORDION ========== */
 	;(function ($, window, document, undefined) {
 		"use strict";
@@ -241,10 +251,10 @@ document.addEventListener("DOMContentLoaded", function (){
 
 	/*=================REVIEW SLIDER ================== */
     var reviewSlider = new Swiper(".review-slider", {
-	   slidesPerView: 1.15,
+	   slidesPerView: 1.07,
 	   loop: true,
 	   speed: 1000,
-	    spaceBetween: 20,
+	    spaceBetween: 10,
        navigation: {
          nextEl: ".swiper-button-next",
          prevEl: ".swiper-button-prev",
@@ -307,22 +317,7 @@ document.addEventListener("DOMContentLoaded", function (){
       },
     });
     
-	/*=================COUNTRY FLAGS SLIDER ================== */
-    var countrySlider = new Swiper(".country-swiper", {
-	   slidesPerView: 11,
-	   loop: true,
-	   speed: 1000,
-	   autoWidth: true,
-	spaceBetween: 10,
-	   scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true,
-      },
-      navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-      },
-    });
+
 	/* подсветка активного меню при скролле Article Page */
 	const backlitMenu = document.querySelector('.backlit-menu');
 	if(backlitMenu){
@@ -350,8 +345,9 @@ document.addEventListener("DOMContentLoaded", function (){
 	}
    
 	const dynamicMenu = document.querySelector('.dynamic-menu');
-    /* меню Содержание страницы на моб версии */
-   if(dynamicMenu){
+   
+	/* меню Содержание страницы на моб версии */
+     if(dynamicMenu){
 	   dynamicMenuBtn = dynamicMenu.querySelector('.dynamic-menu__header');
 	   dynamicMenuList = dynamicMenu.querySelector('.dynamic-menu__list');
 	  
@@ -370,22 +366,175 @@ document.addEventListener("DOMContentLoaded", function (){
 			dynamicMenuList.style.maxHeight = 0;
 			dynamicMenuBtn.classList.remove('active');
 		});
-		window.addEventListener('scroll', ()=>{
-			if(window.innerWidth <= 1280){
-				if(window.scrollY > 550){
-					dynamicMenu.classList.add('active');
-					
-				}else{
-					dynamicMenu.classList.remove('active');
+		const stickyDynamicMenu = document.querySelector('#sticky-menu');
+		const stickyFiltersList = document.querySelector('.filters-drop');
+		
+		if(stickyDynamicMenu){
+			window.addEventListener('scroll', ()=>{
+				if(window.innerWidth <= 1280){
+					if(window.scrollY > 550){
+						stickyDynamicMenu.classList.add('active');
+						
+					}else{
+						stickyDynamicMenu.classList.remove('active');
+					}
 				}
-			}
-		});
-		window.addEventListener('resize', ()=>{
-			if(window.innerWidth > 1279){
-				dynamicMenuList.style.maxHeight = 'unset';
-			}else{
-				dynamicMenuList.style.maxHeight = '0';
-			}
-		});
+			});
+			window.addEventListener('resize', ()=>{
+				if(window.innerWidth > 1279){
+					dynamicMenuList.style.maxHeight = 'unset';
+					dynamicMenuBtn.classList.remove('active');
+				}else{
+					dynamicMenuList.style.maxHeight = '0';
+					dynamicMenuBtn.classList.remove('active');
+				}
+			});
+		}
+		if(stickyFiltersList){
+			window.addEventListener('resize', ()=>{
+				if(window.innerWidth > 1023){
+					stickyFiltersList.style.maxHeight = 'unset';
+					dynamicMenuBtn.classList.remove('active');
+				}else{
+					stickyFiltersList.style.maxHeight = '0';
+					dynamicMenuBtn.classList.remove('active');
+				}
+			});
+		}
    }
+    /*====main page ETAPS TAB BUTTONS WIDTH ========== */
+	const buttons = document.querySelectorAll('.tab-btn');
+  
+	if(buttons.length > 0 && window.innerWidth < 584){
+		
+		/*==== ширина первой кнопки по загрузке страницы ==== */
+		buttons[0].style.width = 'calc(100vw - 56px - 32px - 12px)'; 
+		/*===== обработка клика по кнопке===== */
+		for(let i = 0; i < buttons.length; i++){
+			buttons[i].addEventListener('click', function() {
+				const parent = buttons[i].parentNode;
+				/*делаем все кнопки сначала одной ширины */
+				for(btn of buttons){
+					btn.style.width = '56px';
+				}
+				/*кнопке по которой был клик, задаем динамичную ширину */
+				if( i > 0 && i < (buttons.length - 1)){buttons[i].style.width = 'calc(100vw - 168px)';	}
+				else{
+					buttons[i].style.width = 'calc(100vw - 56px - 32px - 12px)';	
+				}
+				/*вычисляем , на сколько надо сдвинуть родителя, в зависимости от номера кнопки */
+				const offsetLength = -((i-1) * 56 + ((i-1) * 12));
+				const stopScrolling = buttons[buttons.length-1];
+					
+				if( i <2 ){parent.style.transform =`translateX(0)`;}
+				else if( i == buttons.length - 1){parent.style.transform =`translateX(-272px)`;}
+				else {parent.style.transform =`translateX(${offsetLength}px)`;}
+			});
+		}
+	}
+	/***********COUNTRIES SLIDER********* */
+	/*=================COUNTRY FLAGS SLIDER ================== */
+	const swiperRoot = document.querySelector('.country-swiper');
+	if(swiperRoot){
+
+		var mySwiper  = new Swiper(".country-swiper", {
+		slidesPerView: 'auto',
+		speed: 1000,
+		autoWidth: true,
+		
+		navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			}
+		});
+	
+		// Флаг для отслеживания перетаскивания
+		var isDragging = false;
+
+		mySwiper.on('sliderMove', function() {
+			isDragging = true;
+		});
+
+		mySwiper.on('touchEnd', function() {
+		setTimeout(function() { 
+			isDragging = false;
+		}, 100);
+		});
+
+		// Создаем блок один раз и добавляем его в первый слайд
+		var block = document.createElement('div');
+		block.className = 'new-block';
+		mySwiper.slides[0].appendChild(block);
+
+		// Функция для перемещения блока и обновления его ширины
+		function moveBlockToClickedSlide(slide) {
+			if (!isDragging && !slide.classList.contains('active')) {
+				// Удаляем класс active со всех слайдов
+				mySwiper.slides.forEach(function(el) {
+				el.classList.remove('active');
+				});
+
+				// Добавляем класс active к выбранному слайду
+				slide.classList.add('active');
+
+				// Рассчитываем смещение для блока
+				var offset = slide.offsetLeft - mySwiper.wrapperEl.offsetLeft;
+				
+				// Обновляем позицию и ширину блока
+				block.style.left = offset + 'px';
+				block.style.width = slide.offsetWidth + 'px'; 
+			}
+		}
+
+		// Добавляем обработчик клика, который перемещает блок, но не слайдер
+		mySwiper.slides.forEach(function(slide) {
+			slide.addEventListener('click', function() {
+				moveBlockToClickedSlide(this);
+			});
+		});
+
+		// Перемещаем блок в первый слайд при загрузке страницы
+		moveBlockToClickedSlide(mySwiper.slides[0]);
+		
+		// Изменение стилей для new-block
+		block.style.height = '2px'; // Высота блока
+		block.style.width = mySwiper.slides[0].offsetWidth + 'px'; 
+		block.textContent = ''; // Удаление текста из блока
+
+		// Обработчик события resize для обновления ширины new-block
+		window.addEventListener('resize', function() {
+		var activeSlide = document.querySelector('.swiper-slide.active');
+		if (activeSlide) {
+			block.style.width = activeSlide.offsetWidth + 'px'; 
+			block.style.left = activeSlide.offsetLeft - mySwiper.wrapperEl.offsetLeft + 'px';
+		}
+		});
+
+		// Добавляем обработчик события на изменение слайда
+		mySwiper.on('slideChangeTransitionEnd', function() {
+		
+		var activeIndex = mySwiper.activeIndex;
+		document.querySelectorAll('.scool-description').forEach(function(content) {
+			content.classList.remove('active');
+		});
+
+		var activeContent = document.querySelectorAll('.scool-description')[activeIndex];
+		activeContent.classList.add('active');
+		});
+
+		// Добавляем обработчик клика по слайду
+		mySwiper.slides.forEach(function(slide, index) {
+			slide.addEventListener('click', function() {
+				
+				document.querySelectorAll('.scool-description').forEach(function(content) {
+				content.classList.remove('active');
+				});
+
+				var activeContent = document.querySelectorAll('.scool-description')[index];
+				activeContent.classList.add('active');
+			});
+		});
+		mySwiper.off('slideChangeTransitionEnd');
+		window.dispatchEvent(new Event('resize'));
+	}	
 });

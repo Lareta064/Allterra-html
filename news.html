@@ -1,5 +1,3 @@
-<!--=======Миксин не сделан ========-->
-<!--======//====== NAVIGATION ===== ======-->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -9,16 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--=======убрать перевод цифр в номер телефона на ios  и safari ======-->
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="./fonts/fonts.css">
   <!--========= swiper slider ==============-->
   <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
   <!--========= custom styles ========-->
   <link rel="stylesheet" href="./css/main.css">
-  <title>Услуги</title>
+  <title>Новости</title>
+  <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Medium.woff2) format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-SemiBold.woff2) format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Bold.woff2) format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="overlay"></div>
   <!--========== HEADER =========-->
   <header class="header">
     <div class="header-search-popup flex-center-x" id="search-popup">
@@ -44,7 +74,7 @@
     <div class="header-top">
       <div class="container">
         <div class="header-flex">
-          <!--======//====== NAVIGATION ===== ======-->
+          <!--====== NAVIGATION =====-->
           <nav class="header-nav">
             <ul>
               <!--======single LI====-->
@@ -72,10 +102,10 @@
                       <a href="services.html">Все услуги</a>
                     </li>
                     <li>
-                      <a href="undefined">Отзывы</a>
+                      <a href="#!">Отзывы</a>
                     </li>
                     <li>
-                      <a href="undefined">Контакты</a>
+                      <a href="#!">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -86,16 +116,16 @@
                 <div class="drop-menu-wrapper">
                   <ul>
                     <li>
-                      <a href="undefined">Поступление в школу</a>
+                      <a href="#!">Поступление в школу</a>
                     </li>
                     <li>
-                      <a href="undefined">Поступление в университет</a>
+                      <a href="#!">Поступление в университет</a>
                     </li>
                     <li>
-                      <a href="undefined">Каникулы за рубежом</a>
+                      <a href="#!">Каникулы за рубежом</a>
                     </li>
                     <li>
-                      <a href="undefined">Искусство и дизайн</a>
+                      <a href="#!">Искусство и дизайн</a>
                     </li>
                   </ul>
                 </div>
@@ -111,27 +141,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/irl.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
                           <span>Ирландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/malta.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
                           <span>Мальта</span>
                         </a>
                       </div>
@@ -142,27 +184,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/swich.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
                           <span>Швейцария</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fr.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
                           <span>Франция</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/nid.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
                           <span>Голландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fin.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
                           <span>Финлядия</span>
                         </a>
                       </div>
@@ -173,27 +227,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/sing.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
                           <span>Сингапур</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/oae.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
                           <span>ОАЭ</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/tln.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-thail">
+                            <use href="./img/flags-sprite.svg#fl-thail"></use>
+                          </svg>
                           <span>Тайланд</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/kor.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
                           <span>Южная Корея</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/mls.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
                           <span>Малайзия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/china.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
                           <span>Китай</span>
                         </a>
                       </div>
@@ -266,27 +332,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                       </div>
@@ -358,27 +436,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                       </div>
@@ -420,27 +510,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/uk.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
                           <span>Великобритания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/usa.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
                           <span>США</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/irl.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
                           <span>Ирландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/can.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
                           <span>Канада</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/aus.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
                           <span>Австралия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/malta.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
                           <span>Мальта</span>
                         </a>
                       </div>
@@ -451,27 +553,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/swich.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
                           <span>Швейцария</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/spain.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
                           <span>Испания</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/de.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
                           <span>Германия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fr.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
                           <span>Франция</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/nid.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
                           <span>Голландия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/fin.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
                           <span>Финлядия</span>
                         </a>
                       </div>
@@ -482,27 +596,39 @@
                       </div>
                       <div class="grid-column__list">
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/sing.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
                           <span>Сингапур</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/oae.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
                           <span>ОАЭ</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/tln.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-tln">
+                            <use href="./img/flags-sprite.svg#fl-tln"></use>
+                          </svg>
                           <span>Тайланд</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/kor.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
                           <span>Южная Корея</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/mls.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
                           <span>Малайзия</span>
                         </a>
                         <a class="flex-item" href="#!">
-                          <img src="./img/flags/china.svg" width="24" height="16" alt="icon">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
                           <span>Китай</span>
                         </a>
                       </div>
@@ -579,7 +705,7 @@
     </div>
   </header>
   <!--=============MAIN===========-->
-  <main class="main">
+  <main class="inner-page">
     <section class="hero" style="background-image:url(./img/about/header-bg.webp);">
       <div class="container">
         <div class="hero-content">
@@ -588,14 +714,11 @@
               <a href="#!">Главная</a>
             </li>
             <li>
-              <a href="#!">Услуги</a>
+              <a href="#!">Новости</a>
             </li>
           </ul>
           <div class="hero-title">
-            <h1 class="title">Услуги
-              <br>
-              <span class="accent-border"> Allterra&nbsp;Education </span>
-            </h1>
+            <h1 class="h2 tt-none">Новости</h1>
           </div>
           <!--===== bottom text =====-->
           <div class="hero-bottom">
@@ -609,185 +732,355 @@
         </div>
       </div>
     </section>
-    <section class="services">
-      <div class="container-narrow">
-        <div class="custom-text">
-          <p>Allterra Education оказывает своим клиентам профессиональные услуги в сфере международного образования.</p>
-          <p>Мы специализируемся на среднем и высшем образовании за рубежом, помогаем подготовиться к поступлению в школы и вузы, а также тем, кто планирует посвятить свою жизнь искусству или дизайну.</p>
-          <p>Подробнее о том, как мы это делаем, можно прочитать на соответствующих страницах:</p>
+    <section class="news-page">
+      <div class="container">
+        <div class="four-columns">
+          <!--===============группа из 6 карточек ===============-->
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Статья</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Как написать мотивационное письмо в&nbsp;университет?</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/2.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Статья</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Экономическое образование в США</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/9.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Техническое образование в Германии</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/10.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Обучение на промышленного дизайнера за границей</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/11.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> В какой стране лучшее образование?</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/12.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/11.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> В какой стране лучшее образование?</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/12.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <!--===============BANNER ==============-->
+          <a class="img-banner" href="#!">
+            <picture class="img-banner__picture">
+              <source srcset="./img/main-page/faq-img-mob.webp" media="(max-width: 576px)">
+              <source srcset="./img/main-page/faq-img-tablet.webp" media="(max-width: 1023px)">
+              <source srcset="./img/main-page/faq-img.webp" media="(max-width: 1439px)">
+              <img class="lazy" src="./img/main-page/faq-img.webp" width="1240" height="220" alt="image">
+            </picture>
+          </a>
+          <!--===============группа из 6 карточек ===============-->
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/13.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Статья</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> MBA в США: особенности обучения, преимущества и недостатки, подготовка</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/14.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Статья</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> PSHE, CAS и другие: необычные предметы в зарубежных школах</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/15.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Система высшего образования в Англии</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/16.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> ОТехническое образование в Германии</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/2.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Как написать мотивационное письмо в университет?</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/11.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> В какой стране лучшее образование?</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/12.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <!--===============BANNER ==============-->
+          <a class="img-banner" href="#!">
+            <picture class="img-banner__picture">
+              <source srcset="./img/main-page/faq-img-mob.webp" media="(max-width: 576px)">
+              <source srcset="./img/main-page/faq-img-tablet.webp" media="(max-width: 1023px)">
+              <source srcset="./img/main-page/faq-img.webp" media="(max-width: 1439px)">
+              <img class="lazy" src="./img/main-page/faq-img.webp" width="1240" height="220" alt="image">
+            </picture>
+          </a>
+          <!--===============группа из 6 карточек ===============-->
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/13.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Статья</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> MBA в США: особенности обучения, преимущества и недостатки, подготовка</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/14.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Статья</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> PSHE, CAS и другие: необычные предметы в зарубежных школах</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/15.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Система высшего образования в Англии</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/16.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> ОТехническое образование в Германии</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/5.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
+          <div class="blog-card img-zoom">
+            <div class="blog-card__img">
+              <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+            </div>
+            <a class="blog-card__text" href="#!">
+              <div class="blog-card__info txt-14">
+                <span>Новость</span>
+                <time datetime="2024-03-12">12.03.2024</time>
+              </div>
+              <h3 class="txt-16"> Как написать мотивационное письмо в университет?</h3>
+              <p></p>
+              <span class="accent-link">Подробнее</span>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-    <!--========= FEEDBACK =========-->
-    <section class="feedback">
-      <div class="container">
-        <div class="feedback-content two-columns">
-          <!--=====IMG BLOCK ====-->
-          <div class="feedback-img">
-            <img class="wh-100 lazy" src="./img/feedback.webp" alt="alt">
-          </div>
-          <!--===== FORM BLOCK ====-->
-          <div class="feedback-form-wrapper" id="feedback">
-            <h2 class="h2 border-left">Получить консультацию</h2>
-            <form class="feedback-form">
-              <div class="form_field">
-                <input type="text" name="name" placeholder="Ваше имя*">
-              </div>
-              <div class="form_field">
-                <input type="text" name="phone" placeholder="Ваш телефон">
-              </div>
-              <div class="form_field">
-                <input type="text" name="email" placeholder="Ваш email">
-              </div>
-              <div class="form-confirm">
-                <label class="form-checkbox">
-                  <input type="checkbox" name="name_chk">
-                  <span class="fake-checkbox"></span>
-                  <span class="form-confirm__text">Ознакомился с <a class="accent-link" href="#!">политикой конфидециальности</a> и даю своё согласие на обработку персональных данных</span>
-                </label>
-              </div>
-              <div class="form__btn">
-                <button class="btn" type="submit">Получить консультацию</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="all-services">
-      <div class="container">
-        <h2 class="section-title">Услуги Allterra Education по поступлению в школу</h2>
-        <ul class="services-list">
-          <li class="grid-12">
-            <div class="txt-20">Подбор школы и программы обучения</div>
-            <p>Проводим собеседование и тестирование. Определяем критерии подбора школы, ищем максимально подходящие варианты. Составляем с родителями шорт-лист (1-3 учебных заведения) </p>
-          </li>
-          <li class="grid-12">
-            <div class="txt-20">Подготовка к поступлению</div>
-            <p>Создаем профайл ученика с акцентом на сильные стороны. Заполняем все необходимые документы, регистрируем на экзамены, подбираем тьюторов для подготовки к обучению за рубежом</p>
-          </li>
-          <li class="grid-12">
-            <div class="txt-20">Зачисление в школу</div>
-            <p>Получаем ответы от школ и определяемся с финальным выбором. Согласовываем условия оплаты, контролируем получение документов, заказываем школьную форму и экипировку для занятий</p>
-          </li>
-          <li class="grid-12">
-            <div class="txt-20">Визирование и подготовка к отъезду</div>
-            <p>Оформляем учебную визу: заполняем и проверяем документы, готовим к собеседованию в посольстве. Отслеживаем статус заявления, высылаем инструкции по сбору вещей и прохождению границы, заказываем трансфер</p>
-          </li>
-          <li class="grid-12">
-            <div class="txt-20">Курирование во время обучения</div>
-            <p>Следим за успеваемостью и посещением уроков, помогаем наладить контакт со школой, решаем бытовые вопросы. Организуем визиты для семьи и друзей. Остаемся на связи 24/7, чтобы родители были спокойны</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--============ STATISTICS ===================-->
-    <section class="statistics dark-bg">
-      <div class="container">
-        <!--=======wrapper======-->
-        <div class="statistics-content">
-          <!--====single item =======-->
-          <div class="statistics-item">
-            <span>Работаем
-              <br> c
-            </span>
-            <p>2008</p>
-            <span>года</span>
-          </div>
-          <!--====single item =======-->
-          <div class="statistics-item">
-            <span>Успешно зачислили
-              <br> более
-            </span>
-            <p>1200</p>
-            <span>студентов</span>
-          </div>
-          <!--====single item =======-->
-          <div class="statistics-item">
-            <span>Довольных клиентов
-              <br> более
-            </span>
-            <div class="flex-row">
-              <p>99&nbsp;%</p>
-            </div>
-          </div>
-          <!--====single item =======-->
-          <div class="statistics-item">
-            <span>Нам доверяют
-              <br> более
-            </span>
-            <p>100</p>
-            <span>студентов ежегодно</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--========== ACCREDITATION ============-->
-    <section class="accreditation">
-      <div class="container">
-        <div class="accreditation-content flex-justify">
-          <!--======== LEFT COLUMN =====-->
-          <div class="accreditation__title flex-col">
-            <h2 class="h2">Аккредитации нашей компании</h2>
-            <!--===== rabbit image=====-->
-            <div class="accreditation__img">
-              <img class="lazy" src="./img/rabbit.webp" width="221" height="303" alt="img">
-            </div>
-          </div>
-          <!--======== RIGHT COLUMN =====-->
-          <div class="accreditation-cards">
-            <div class="flex-row">
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img src="./img/accredit/logo1.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> входит в список агентств, рекомендованных Британским Советом для профессиональной консультации по учебе в Великобритании
-                  </p>
-                </div>
-              </div>
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img src="./img/accredit/logo2.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> является официальным представителем более 300 ведущих частных школ Великобритании в рамках ассоциации British Boarding Schools Network
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-row">
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img src="./img/accredit/logo3.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> – член организации ICEF; наши специалисты прошли профессиональную подготовку и получили международный статус ICEF Trained Advisors
-                  </p>
-                </div>
-              </div>
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img src="./img/accredit/logo4.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> успешно сотрудничает с международной ассоциацией Quality Education, в которую входят лучшие языковые школы и колледжи планеты
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!--=====pagination =======-->
+        <div class="pagination">
+          <a class="page-num prev disable" href="#!"></a>
+          <a class="page-num" href="#!">1</a>
+          <a class="page-num" href="#!">2</a>
+          <a class="page-num active" href="#!">3</a>
+          <a class="page-num" href="#!">...</a>
+          <a class="page-num" href="#!">22</a>
+          <a class="page-num next" href="#!"></a>
         </div>
       </div>
     </section>
     <!--============ CONTACTS ================-->
     <section class="contacts dark-bg">
       <div class="container">
-        <form class="contacts-form form-opacity">
+        <form class="contacts-form dark-opacity">
           <p class="h3">Задать вопрос</p>
           <div class="form_field">
             <input type="text" name="name" placeholder="Ваше имя*">
