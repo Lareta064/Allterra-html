@@ -316,13 +316,25 @@ document.addEventListener("DOMContentLoaded", function (){
         },
       },
     });
-    
+    /*=================INSTITUTE SLIDER ================== */
+	var instituteSlider = new Swiper(".institute-slider", {
+	   slidesPerView: 1,
+	   speed: 1000,
+	   loop: true,
+	   spaceBetween: 20,
+        pagination: {
+        	el: ".swiper-pagination",
+			clickable: true,
+      	},
+    });
 
 	/* подсветка активного меню при скролле Article Page */
 	const backlitMenu = document.querySelector('.backlit-menu');
 	if(backlitMenu){
+		
 		const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
+			
 			if (entry.isIntersecting) {
 				
 				backlitMenu.querySelectorAll('a').forEach((link) => {
@@ -354,6 +366,7 @@ document.addEventListener("DOMContentLoaded", function (){
 	    dynamicMenuBtn.addEventListener('click', ()=>{
 			
 			if(dynamicMenuBtn.classList.contains('active')){
+				
 				dynamicMenuList.style.maxHeight = 0;
 				dynamicMenuBtn.classList.remove('active');
 				
@@ -363,12 +376,20 @@ document.addEventListener("DOMContentLoaded", function (){
 			}
 		});
 		dynamicMenuList.addEventListener('click', ()=>{
-			dynamicMenuList.style.maxHeight = 0;
-			dynamicMenuBtn.classList.remove('active');
+			if(dynamicMenu.classList.contains('active')){
+
+				
+				dynamicMenuList.style.maxHeight = 0;
+				dynamicMenuBtn.classList.remove('active');
+			}
 		});
+		
 		const stickyDynamicMenu = document.querySelector('#sticky-menu');
+		const institutePageDynamicMenu = document.querySelector('#institute-menu');
+
 		const stickyFiltersList = document.querySelector('.filters-drop');
 		
+
 		if(stickyDynamicMenu){
 			window.addEventListener('scroll', ()=>{
 				if(window.innerWidth <= 1280){
@@ -384,6 +405,31 @@ document.addEventListener("DOMContentLoaded", function (){
 				if(window.innerWidth > 1279){
 					dynamicMenuList.style.maxHeight = 'unset';
 					dynamicMenuBtn.classList.remove('active');
+					
+					
+				}else{
+					dynamicMenuList.style.maxHeight = '0';
+					dynamicMenuBtn.classList.remove('active');
+				}
+			});
+		}
+		if(institutePageDynamicMenu){
+			window.addEventListener('scroll', ()=>{
+				if(window.innerWidth <= 1024){
+					if(window.scrollY > 150){
+						institutePageDynamicMenu.classList.add('active');
+						
+					}else{
+						institutePageDynamicMenu.classList.remove('active');
+					}
+				}
+			});
+			window.addEventListener('resize', ()=>{
+				if(window.innerWidth > 1023){
+					dynamicMenuList.style.maxHeight = 'unset';
+					dynamicMenuBtn.classList.remove('active');
+					
+					
 				}else{
 					dynamicMenuList.style.maxHeight = '0';
 					dynamicMenuBtn.classList.remove('active');
@@ -396,8 +442,10 @@ document.addEventListener("DOMContentLoaded", function (){
 					stickyFiltersList.style.maxHeight = 'unset';
 					dynamicMenuBtn.classList.remove('active');
 				}else{
-					stickyFiltersList.style.maxHeight = '0';
-					dynamicMenuBtn.classList.remove('active');
+					 if (window.innerWidth !== window.innerWidth){
+						stickyFiltersList.style.maxHeight = '0';
+						dynamicMenuBtn.classList.remove('active');
+					 }
 				}
 			});
 		}
@@ -432,8 +480,9 @@ document.addEventListener("DOMContentLoaded", function (){
 			});
 		}
 	}
-	/***********COUNTRIES SLIDER********* */
+	
 	/*=================COUNTRY FLAGS SLIDER ================== */
+	
 	const swiperRoot = document.querySelector('.country-swiper');
 	if(swiperRoot){
 
@@ -536,5 +585,173 @@ document.addEventListener("DOMContentLoaded", function (){
 		});
 		mySwiper.off('slideChangeTransitionEnd');
 		window.dispatchEvent(new Event('resize'));
-	}	
+	}
+
+	/**********scool card programs************/
+	const scoolCards = document.querySelectorAll('.scool-card');
+	  // Функция для проверки позиций элементов
+	function checkBounds(parent, child) {
+		const parentRect = parent.getBoundingClientRect();
+		const childRect = child.getBoundingClientRect();
+
+		// Проверяем, не выходит ли нижний край дочернего элемента за родительский
+		if (childRect.bottom > parentRect.bottom) {
+		// Если выходит, добавляем дополнительный класс
+		child.classList.add('offset-top');
+		}
+	}
+  
+	if(scoolCards.length > 0 ){
+		
+		for(let item of scoolCards){
+			const btnShowPrograms = item.querySelector('.show-scool-programs');
+			const cardprogramsTable =  item.querySelector('.scool-drop');
+			const cardPrices =  item.querySelectorAll('.cell-price');
+			function closeActivePrice(){
+				const activePrice = item.querySelector('.cell-price__drop.active');
+				if(activePrice) activePrice.classList.remove('active');
+			}
+			
+			btnShowPrograms.addEventListener('click', ()=>{
+				if(item.classList.contains('active')){
+					closeActivePrice();
+					item.classList.remove('active');
+					if(window.innerWidth > 767){
+						cardprogramsTable.style.maxHeight = 0;
+						cardprogramsTable.style.overflow = 'hidden';
+					}
+				}
+				else{
+					item.classList.add('active');
+					if(window.innerWidth > 767){
+						cardprogramsTable.style.maxHeight = cardprogramsTable.scrollHeight + 'px';
+						cardprogramsTable.style.overflow = 'visible';
+					}
+				}
+			});
+
+			for(let priceCell of cardPrices){
+				const priceCellBtn = priceCell.querySelector('.cell-price__btn');
+				const priceCellDrop = priceCell.querySelector('.cell-price__drop');
+				if( priceCellBtn){
+					
+					priceCellBtn.addEventListener('click', (e)=>{
+						e.preventDefault();
+						
+						const activePrice = item.querySelector('.cell-price__drop.active');
+						const cellPriceActive = item.querySelector('.cell-price.active');
+						if(activePrice && activePrice !== priceCellDrop){
+							activePrice.classList.remove('active');
+							cellPriceActive.classList.remove('active');
+						}
+						priceCellDrop.classList.toggle('active');
+						priceCell.classList.toggle('active');
+						 checkBounds(item, priceCellDrop);
+						
+					});
+				}
+			}
+			
+		}
+	}
+     /* toggle active class for childs */
+	function toggleActiveClass(parentClass, childClass) {
+		const parents = document.querySelectorAll('.' + parentClass);
+		parents.forEach(parent => {
+			parent.addEventListener('click', function(e) {
+			
+			if (e.target.classList.contains(childClass)) {
+				// Удаляем класс 'active' у всех дочерних элементов внутри родителя
+				parent.querySelectorAll('.' + childClass).forEach(child => {
+				child.classList.remove('active');
+				});
+				// Добавляем класс 'active' элементу, по которому был клик
+				e.target.classList.add('active');
+			}
+			});
+		});
+	}
+  	toggleActiveClass('cell-price', 'pay-cur');
+	 /* стр учебные заведения переключение карточек */
+	 const cardsWrapper = document.getElementById('scool-cards-grid');
+	 
+	 if(cardsWrapper){
+		const btnBuildRows = document.getElementById('scool-grid-rows');
+		const btnBuildCols = document.getElementById('scool-grid-cols');
+		btnBuildRows.addEventListener('click', ()=>{
+			
+			 btnBuildRows.classList.add('active');
+			 btnBuildCols.classList.remove('active');
+			 cardsWrapper.classList.remove('three-columns');
+
+		});
+		btnBuildCols.addEventListener('click', ()=>{
+			
+			 btnBuildRows.classList.remove('active');
+			 btnBuildCols.classList.add('active');
+			 cardsWrapper.classList.add('three-columns');
+
+		});
+		window.addEventListener('resize', function() {
+			if(this.window.innerWidth < 1279){
+				btnBuildRows.classList.add('active');
+			 	btnBuildCols.classList.remove('active');
+				cardsWrapper.classList.remove('three-columns');
+			}
+		});
+	 }
+	/********** стр Программа height-dynamic********* */
+	const heightDynamic = document.querySelectorAll('.height-dynamic');
+	if(heightDynamic.length > 0){
+		for(let block of heightDynamic){
+			
+			/* если специализаций меньше двух, то не скрываем контент */
+			const blockTable = block.querySelector('.programs-table');
+			if(blockTable.offsetHeight < 107){
+				block.classList.add('active');
+			}else{
+
+				const heightDynamicBtn = block.querySelector('.height-dynamic__btn');
+				heightDynamicBtn.addEventListener('click', ()=>{
+					block.classList.add('active');
+					block.style.maxHeight = block.scrollHeight + 'px';
+				});
+			}
+			
+		}
+	}
+
+	const scoolProgramsPrice = document.querySelectorAll('.programs-table .cell-price');
+	
+	if(scoolProgramsPrice.length > 0){
+		// Получаем все кнопки для открытия выпадающего списка цен
+		var priceButtons = document.querySelectorAll('.programs-table .cell-price__btn');
+
+		// Функция для удаления класса 'active' у всех элементов .cell-price
+		function removeActiveClasses() {
+			document.querySelectorAll('.programs-table .cell-price.active').forEach(function(cellPrice) {
+				cellPrice.classList.remove('active');
+			});
+		}
+		 priceButtons.forEach(function(btn) {
+			btn.addEventListener('click', function(event) {
+				
+				event.stopPropagation();
+				
+				if (this.parentElement.classList.contains('active')) {
+					
+					this.parentElement.classList.remove('active');
+				} else {
+					
+					removeActiveClasses();
+					
+					this.parentElement.classList.add('active');
+				}
+			});
+		});
+		document.addEventListener('click', function() {
+			removeActiveClasses();
+		});
+	}
+	
 });

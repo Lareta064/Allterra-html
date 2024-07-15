@@ -1,0 +1,2650 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--=======убрать перевод цифр в номер телефона на ios  и safari ======-->
+  <meta name="format-detection" content="telephone=no">
+  <!--========= swiper slider ==============-->
+  <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
+  <!--========= custom styles ========-->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Каталог</title>
+  <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Regular.woff2) format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Medium.woff2) format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-SemiBold.woff2) format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url(./fonts/Inter-Bold.woff2) format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+</head>
+
+<body>
+  <!--========== HEADER =========-->
+  <header class="header">
+    <div class="header-search-popup flex-center-x" id="search-popup">
+      <div class="header-search-wrapper">
+        <form class="header-search flex-center-y">
+          <div class="form_field">
+            <input type="text" name="search-input" placeholder="Поиск по сайту">
+            <!--===== clean input button =====-->
+            <button class="btn-icon" type="reset">
+              <svg class="svg-cross">
+                <use href="./img/spriteSvg.svg#svg-cross"></use>
+              </svg>
+            </button>
+          </div>
+          <!--======FORM BUTTON=====		-->
+          <div class="form__btn">
+            <button class="btn-accent" type="submit">Найти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--======= HEADER TOP ROW=======-->
+    <div class="header-top">
+      <div class="container">
+        <div class="header-flex">
+          <!--====== NAVIGATION =====-->
+          <nav class="header-nav">
+            <ul>
+              <!--======single LI====-->
+              <li class="menu-li drop-menu-li">
+                <a href="#!">О компании</a>
+                <!--======single LI Drop-menu====-->
+                <div class="drop-menu-wrapper">
+                  <ul>
+                    <li>
+                      <a href="about.html">Об Allterra Education</a>
+                    </li>
+                    <li>
+                      <a href="greeting.html">Обращение директора</a>
+                    </li>
+                    <li>
+                      <a href="cooperation.html">Сотрудничество</a>
+                    </li>
+                    <li>
+                      <a href="vacant.html">Вакансии</a>
+                    </li>
+                    <li>
+                      <a href="partners.html">Partner`s zone</a>
+                    </li>
+                    <li>
+                      <a href="services.html">Все услуги</a>
+                    </li>
+                    <li>
+                      <a href="#!">Отзывы</a>
+                    </li>
+                    <li>
+                      <a href="#!">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!--======single LI====-->
+              <li class="menu-li drop-menu-li">
+                <a href="#!">Все услуги</a>
+                <div class="drop-menu-wrapper">
+                  <ul>
+                    <li>
+                      <a href="#!">Поступление в школу</a>
+                    </li>
+                    <li>
+                      <a href="#!">Поступление в университет</a>
+                    </li>
+                    <li>
+                      <a href="#!">Каникулы за рубежом</a>
+                    </li>
+                    <li>
+                      <a href="#!">Искусство и дизайн</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!--======single LI====-->
+              <li class="menu-li drop-menu-li">
+                <a href="#!">Страны</a>
+                <div class="drop-menu-wrapper">
+                  <div class="three-columns-grid">
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Англоговорящие</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
+                          <span>Великобритания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
+                          <span>США</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
+                          <span>Ирландия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
+                          <span>Канада</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
+                          <span>Австралия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
+                          <span>Мальта</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Европа</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
+                          <span>Швейцария</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
+                          <span>Испания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
+                          <span>Германия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
+                          <span>Франция</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
+                          <span>Голландия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
+                          <span>Финлядия</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Азия</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
+                          <span>Сингапур</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
+                          <span>ОАЭ</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-thail">
+                            <use href="./img/flags-sprite.svg#fl-thail"></use>
+                          </svg>
+                          <span>Тайланд</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
+                          <span>Южная Корея</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
+                          <span>Малайзия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
+                          <span>Китай</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--======= bottom link =====-->
+                  <div class="drop-menu-footer">
+                    <a class="accent-link" href="#!">Показать все страны</a>
+                  </div>
+                </div>
+              </li>
+              <!--======single LI====-->
+              <li class="menu-li">
+                <a href="article.html">Справочник поступающего</a>
+              </li>
+              <!--======single LI====-->
+              <li class="menu-li">
+                <a href="#!">Новости</a>
+              </li>
+              <!--======single LI====-->
+              <li class="menu-li">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!--======RIGHT COLUMN =====-->
+          <div class="header-column">
+            <!--==== выбор языка ===-->
+            <div class="custom-select custom-select--lang">
+              <input type="text" value="Ru">
+              <!--=== спислк с языками===-->
+              <div class="custom-select__drop">
+                <div class="custom-select__list">
+                  <a href="#!">En</a>
+                  <a href="#!">Ru</a>
+                </div>
+              </div>
+            </div>
+            <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--======= HEADER BOTTOM ROW =======-->
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-flex">
+          <!--=======LOGO=====-->
+          <a class="logo" href="main.html">
+            <svg class="svg-logo">
+              <use href="./img/spriteSvg.svg#logo"></use>
+            </svg>
+          </a>
+          <!--====== NAVIGATION =====-->
+          <nav class="header-nav header-nav--white">
+            <ul>
+              <li class="menu-li">
+                <a href="">Высшее образование</a>
+              </li>
+              <li class="menu-li">
+                <a href="">Среднее образование</a>
+              </li>
+              <li class="menu-li drop-menu-li">
+                <a href="">Языковая программа</a>
+                <div class="drop-menu-wrapper">
+                  <div class="two-colums-grid">
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Страны</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
+                          <span>Великобритания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
+                          <span>США</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
+                          <span>Канада</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
+                          <span>Австралия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
+                          <span>Испания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
+                          <span>Германия</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-colum">
+                      <div class="grid-column__title">
+                        <p>Программы</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a href="#!">Язык и спорт</a>
+                        <a href="#!">Язык и творчество</a>
+                        <a href="#!">Футбольные лагеря</a>
+                        <a href="#!">Весенние каникулы</a>
+                        <a href="#!">Осенние каникулы</a>
+                        <a href="#!">Зимние каникулы</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-li">
+                <a href="">Учебные заведения</a>
+              </li>
+            </ul>
+          </nav>
+          <!--======== BUTTONS GROUP=========-->
+          <div class="header-column">
+            <button class="btn-icon search-btn" id="search-btn">
+              <svg class="svg-search">
+                <use href="./img/spriteSvg.svg#svg-search"></use>
+              </svg>
+            </button>
+            <a class="btn-accent btn-advice" href="#feedback">Консультация</a>
+            <!--====== menu-toggle =====-->
+            <button class="menu-toggle" type="button" id="menu-toggle">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--=========HEADER MOBILE MENU ======-->
+    <div class="mobile-menu-wrapper" id="mobile-menu">
+      <div class="mobile-menu-content flex-col flex-justify">
+        <nav class="mobile-menu">
+          <ul>
+            <li class="menu-item">
+              <a href="#!">Высшее образование</a>
+            </li>
+            <li class="menu-item">
+              <a href="#!">Среднее образование</a>
+            </li>
+            <!--=======MENU ITEM ======-->
+            <li class="menu-item drop-menu-li">
+              <a href="#!">Языковая программа</a>
+              <!--========CHILD MENU ======-->
+              <div class="drop-menu-wrapper">
+                <div class="drop-menu__header flex-justify">
+                  <a class="back-link" href="#!">
+                    <span class="chevron-back"></span>
+                    <span>Языковая программа</span>
+                  </a>
+                </div>
+                <div class="drop-menu__list">
+                  <div class="two-colums-grid">
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Страны</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
+                          <span>Великобритания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
+                          <span>США</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
+                          <span>Канада</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
+                          <span>Австралия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
+                          <span>Испания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
+                          <span>Германия</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-colum">
+                      <div class="grid-column__title">
+                        <p>Программы</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a href="#!">Язык и спорт</a>
+                        <a href="#!">Язык и творчество</a>
+                        <a href="#!">Футбольные лагеря</a>
+                        <a href="#!">Весенние каникулы</a>
+                        <a href="#!">Осенние каникулы</a>
+                        <a href="#!">Зимние каникулы</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--=======MENU ITEM ======-->
+            <li class="menu-item drop-menu-li">
+              <a href="#!">Страны</a>
+              <!--========CHILD MENU ======-->
+              <div class="drop-menu-wrapper">
+                <div class="drop-menu__header flex-justify">
+                  <a class="back-link" href="#!">
+                    <span class="chevron-back"></span>
+                    <span>Страны</span>
+                  </a>
+                  <a class="accent-link" href="#!">Показать все</a>
+                </div>
+                <div class="drop-menu__list">
+                  <div class="three-columns-grid">
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Англоговорящие</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-uk">
+                            <use href="./img/flags-sprite.svg#fl-uk"></use>
+                          </svg>
+                          <span>Великобритания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-usa">
+                            <use href="./img/flags-sprite.svg#fl-usa"></use>
+                          </svg>
+                          <span>США</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-irl">
+                            <use href="./img/flags-sprite.svg#fl-irl"></use>
+                          </svg>
+                          <span>Ирландия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-can">
+                            <use href="./img/flags-sprite.svg#fl-can"></use>
+                          </svg>
+                          <span>Канада</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-aus">
+                            <use href="./img/flags-sprite.svg#fl-aus"></use>
+                          </svg>
+                          <span>Австралия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-malta">
+                            <use href="./img/flags-sprite.svg#fl-malta"></use>
+                          </svg>
+                          <span>Мальта</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Европа</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-swet">
+                            <use href="./img/flags-sprite.svg#fl-swet"></use>
+                          </svg>
+                          <span>Швейцария</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-spain">
+                            <use href="./img/flags-sprite.svg#fl-spain"></use>
+                          </svg>
+                          <span>Испания</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-de">
+                            <use href="./img/flags-sprite.svg#fl-de"></use>
+                          </svg>
+                          <span>Германия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-fr">
+                            <use href="./img/flags-sprite.svg#fl-fr"></use>
+                          </svg>
+                          <span>Франция</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-netherl">
+                            <use href="./img/flags-sprite.svg#fl-netherl"></use>
+                          </svg>
+                          <span>Голландия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-fin">
+                            <use href="./img/flags-sprite.svg#fl-fin"></use>
+                          </svg>
+                          <span>Финлядия</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="grid-column">
+                      <div class="grid-column__title">
+                        <p>Азия</p>
+                      </div>
+                      <div class="grid-column__list">
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-sing">
+                            <use href="./img/flags-sprite.svg#fl-sing"></use>
+                          </svg>
+                          <span>Сингапур</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-oae">
+                            <use href="./img/flags-sprite.svg#fl-oae"></use>
+                          </svg>
+                          <span>ОАЭ</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-tln">
+                            <use href="./img/flags-sprite.svg#fl-tln"></use>
+                          </svg>
+                          <span>Тайланд</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-kor">
+                            <use href="./img/flags-sprite.svg#fl-kor"></use>
+                          </svg>
+                          <span>Южная Корея</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-malasia">
+                            <use href="./img/flags-sprite.svg#fl-malasia"></use>
+                          </svg>
+                          <span>Малайзия</span>
+                        </a>
+                        <a class="flex-item" href="#!">
+                          <svg class="fl-china">
+                            <use href="./img/flags-sprite.svg#fl-china"></use>
+                          </svg>
+                          <span>Китай</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#!">Учебные заведения</a>
+            </li>
+            <li class="menu-item drop-menu-li">
+              <a href="#!">О компании</a>
+              <!--========CHILD MENU ======-->
+              <div class="drop-menu-wrapper">
+                <div class="drop-menu__header flex-justify">
+                  <a class="back-link" href="#!">
+                    <span class="chevron-back"></span>
+                    <span>О компании</span>
+                  </a>
+                </div>
+                <div class="drop-menu__list">
+                  <a href="about.html">Об Allterra Education</a>
+                  <a href="greeting.html">Обращение директора</a>
+                  <a href="cooperation.html">Сотрудничество</a>
+                  <a href="vacant.html">Вакансии</a>
+                  <a href="partners.html">Partner`s zone</a>
+                  <a href="services.html">Все услуги</a>
+                  <a href="#!">Отзывы</a>
+                  <a href="#!">Контакты</a>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item drop-menu-li">
+              <a href="#!">Все услуги</a>
+              <!--========CHILD MENU ======-->
+              <div class="drop-menu-wrapper">
+                <div class="drop-menu__header flex-justify">
+                  <a class="back-link" href="#!">
+                    <span class="chevron-back"></span>
+                    <span>Все услуги</span>
+                  </a>
+                </div>
+                <div class="drop-menu__list">
+                  <a href="#!">Поступление в школу</a>
+                  <a href="#!">Поступление в университет</a>
+                  <a href="#!">Каникулы за рубежом</a>
+                  <a href="#!">Искусство и дизайн</a>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item">
+              <a href="#!">Справочник поступающего</a>
+            </li>
+            <li class="menu-item">
+              <a href="#!">Новости</a>
+            </li>
+            <li class="menu-item">
+              <a href="#!">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!--=====buttons=====-->
+        <div class="fixed-buttons">
+          <a class="btn-accent" href="#!">Задать вопрос</a>
+          <a class="btn" href="#!">
+            <svg class="svg-phone">
+              <use href="./img/spriteSvg.svg#svg-phone"></use>
+            </svg>
+            <span>Позвонить</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--=============MAIN===========-->
+  <main class="inner-page inner-page--catalogy">
+    <section class="hero hero--light">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li>
+            <a href="#!">Главная</a>
+          </li>
+          <li>
+            <a href="#!">Каталог</a>
+          </li>
+          <li>
+            <a href="#!">ОАЭ</a>
+          </li>
+          <li>
+            <a href="#!">360 Institute of Management</a>
+          </li>
+        </ul>
+        <h1 class="title">Каталог программ и учебных заведений Allterra Education </h1>
+      </div>
+    </section>
+    <section class="catalogy-page">
+      <div class="container">
+        <div class="aside-grid aside-grid--1023 gap-20">
+          <!--=====left column ====-->
+          <div class="aside-grid__col filters dynamic-menu">
+            <!--====== filters header ===-->
+            <div class="filters-header dynamic-menu__header">
+              <div class="h4">Выберите интересующие вас</div>
+              <svg class="svg-chevron-down">
+                <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+              </svg>
+            </div>
+            <!--====== filters content ===-->
+            <div class="filters-drop dynamic-menu__list">
+              <div class="filters-body">
+                <!--=====ОДНА ГРУППА ======-->
+                <div class="filters-group">
+                  <div class="filters-group__title">Страна</div>
+                  <div class="filters-group__list">
+                    <a href="#!">Австралия</a>
+                    <a href="#!">Великобритания</a>
+                    <a href="#!">Германия</a>
+                    <a href="#!">Ирландия</a>
+                    <a href="#!">Испания</a>
+                    <a href="#!">Италия</a>
+                    <a href="#!">Австралия</a>
+                    <a href="#!">Великобритания</a>
+                    <a href="#!">Германия</a>
+                    <a href="#!">Ирландия</a>
+                    <a href="#!">Испания</a>
+                    <a href="#!">Италия </a>
+                  </div>
+                  <!--======= показать еще =======-->
+                  <button class="accent-link btn-more" type="button">Показать еще
+                    <svg class="svg-chevron-down">
+                      <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                    </svg>
+                  </button>
+                </div>
+                <!--=====ОДНА ГРУППА ======-->
+                <div class="filters-group">
+                  <div class="filters-group__title">Уровень образования</div>
+                  <div class="filters-group__list">
+                    <a href="#!">Арт и Дизайн</a>
+                    <a href="#!">Высшее образование</a>
+                    <a href="#!">Каникулы</a>
+                    <a href="#!">Подготовка к экзаменам</a>
+                    <a href="#!">Среднее образование</a>
+                    <a href="#!">Языковые курсы</a>
+                  </div>
+                </div>
+                <!--=====ОДНА ГРУППА ======-->
+                <div class="filters-group">
+                  <div class="filters-group__title">Полезная информация</div>
+                  <div class="filters-group__list">
+                    <a href="#!">Отзывы</a>
+                    <a href="#!">Новости</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==== right column ====-->
+          <div class="aside-grid__content offset-top-48">
+            <!--=====INNER MENU =====-->
+            <div class="inner-menu">
+              <nav>
+                <a href="#!">Учебные заведения</a>
+                <a href="#importance-choice">Почему важно правильно подобрать учебное заведение</a>
+                <a href="#feature-education">Особенности образования в разных странах</a>
+                <a href="#education-switzerland">Обучение в Швейцарии</a>
+                <a href="#education-usa">Обучение в США</a>
+                <a href="#education-uk">Обучение в Англии</a>
+                <a href="#education-germany">Обучение в Германии</a>
+                <a href="#cost-edu-board">Стоимость обучения за границей</a>
+                <a href="#cost-edu-secondary">Стоимость среднего образования</a>
+                <a href="#cost-edu-higher">Стоимость высшего образования в Европе и Америке</a>
+                <a href="#edu-prospects">Перспективы студента после обучения за рубежом</a>
+                <a href="#edu-choosing">Выбор учебного заведения с Allterra Education</a>
+              </nav>
+            </div>
+            <!--====== cards section====-->
+            <article class="scool-cards-wrapper">
+              <div class="header-group">
+                <div class="h3">Учебные заведения</div>
+                <!--===== toggles =====-->
+                <div class="btns-group flex-1280">
+                  <button class="btn-bars active" id="scool-grid-rows">
+                    <svg class="svg-bar">
+                      <use href="./img/spriteSvg.svg#svg-bar"></use>
+                    </svg>
+                  </button>
+                  <button class="btn-table" id="scool-grid-cols">
+                    <svg class="svg-table">
+                      <use href="./img/spriteSvg.svg#svg-table"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="scool-cards-grid" id="scool-cards-grid">
+                <div class="scool-card">
+                  <!--===== картинка =====-->
+                  <div class="scool-picture">
+                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <div class="rating-label">9.6</div>
+                  </div>
+                  <!--====верхний ряд, видимый =====-->
+                  <div class="scool-info">
+                    <!--===== описание =====-->
+                    <div class="scool-descrip">
+                      <div class="h5">Wildau Studienkolleg, Technical University of Applied Sciences Wildau</div>
+                      <!--=== list ====-->
+                      <ul class="scool__list">
+                        <li>
+                          <i>
+                            <svg class="svg-cap">
+                              <use href="./img/spriteSvg.svg#svg-cap"></use>
+                            </svg>
+                          </i>
+                          <span>Частная школа совместного обучения</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-pin">
+                              <use href="./img/spriteSvg.svg#svg-pin"></use>
+                            </svg>
+                          </i>
+                          <span>Великобритания, Кроуторн</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-globus">
+                              <use href="./img/spriteSvg.svg#svg-globus"></use>
+                            </svg>
+                          </i>
+                          <span>Языки обучения: Английский</span>
+                        </li>
+                      </ul>
+                      <!--===price + buttons ===-->
+                      <div class="scool-row">
+                        <!--==== цена + программы ====-->
+                        <div class="scool-row__group">
+                          <div class="price-block price-block--16">от <span>2000 &dollar;</span>/неделя</div>
+                          <button class="show-scool-programs">
+                            <span>Программы <span 4="4"></span>
+                            </span>
+                            <i class="changing-icon"></i>
+                          </button>
+                        </div>
+                        <!--=== ссылка Перейти ===-->
+                        <div class="scool-row__link">
+                          <a class="btn flex-row" href="#!">
+                            <span>Перейти </span>
+                            <span>к учебному заведению</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--==== программы-выпадающая таблица====-->
+                    <div class="scool-drop">
+                      <table class="scool-table">
+                        <thead>
+                          <tr>
+                            <th class="cell-name">Программы</th>
+                            <th class="cell-age">Возраст</th>
+                            <!--==== класс active  переключается у выбранной валюты оплаты ====-->
+                            <th class="cell-price">Выбрать <span class="pay-cur active">€</span>|<span class="pay-cur">₽</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li class="active">36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="scool-card">
+                  <!--===== картинка =====-->
+                  <div class="scool-picture">
+                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <div class="rating-label">9.6</div>
+                  </div>
+                  <!--====верхний ряд, видимый =====-->
+                  <div class="scool-info">
+                    <!--===== описание =====-->
+                    <div class="scool-descrip">
+                      <div class="h5">Wildau Studienkolleg</div>
+                      <!--=== list ====-->
+                      <ul class="scool__list">
+                        <li>
+                          <i>
+                            <svg class="svg-cap">
+                              <use href="./img/spriteSvg.svg#svg-cap"></use>
+                            </svg>
+                          </i>
+                          <span>Частная школа совместного обучения</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-pin">
+                              <use href="./img/spriteSvg.svg#svg-pin"></use>
+                            </svg>
+                          </i>
+                          <span>Великобритания, Кроуторн</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-globus">
+                              <use href="./img/spriteSvg.svg#svg-globus"></use>
+                            </svg>
+                          </i>
+                          <span>Языки обучения: Английский</span>
+                        </li>
+                      </ul>
+                      <!--===price + buttons ===-->
+                      <div class="scool-row">
+                        <!--==== цена + программы ====-->
+                        <div class="scool-row__group">
+                          <div class="price-block price-block--16">от <span>2000 &dollar;</span>/неделя</div>
+                          <button class="show-scool-programs">
+                            <span>Программы <span 4="4"></span>
+                            </span>
+                            <i class="changing-icon"></i>
+                          </button>
+                        </div>
+                        <!--=== ссылка Перейти ===-->
+                        <div class="scool-row__link">
+                          <a class="btn flex-row" href="#!">
+                            <span>Перейти </span>
+                            <span>к учебному заведению</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--==== программы-выпадающая таблица====-->
+                    <div class="scool-drop">
+                      <table class="scool-table">
+                        <thead>
+                          <tr>
+                            <th class="cell-name">Программы</th>
+                            <th class="cell-age">Возраст</th>
+                            <th class="cell-price">Выбрать <span class="pay-cur active">€</span>|<span class="pay-cur">₽</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="scool-card">
+                  <!--===== картинка =====-->
+                  <div class="scool-picture">
+                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <div class="rating-label">9.6</div>
+                  </div>
+                  <!--====верхний ряд, видимый =====-->
+                  <div class="scool-info">
+                    <!--===== описание =====-->
+                    <div class="scool-descrip">
+                      <div class="h5">Wildau Studienkolleg, Technical University of Applied Sciences Wildau</div>
+                      <!--=== list ====-->
+                      <ul class="scool__list">
+                        <li>
+                          <i>
+                            <svg class="svg-cap">
+                              <use href="./img/spriteSvg.svg#svg-cap"></use>
+                            </svg>
+                          </i>
+                          <span>Частная школа совместного обучения</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-pin">
+                              <use href="./img/spriteSvg.svg#svg-pin"></use>
+                            </svg>
+                          </i>
+                          <span>Великобритания, Кроуторн</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-globus">
+                              <use href="./img/spriteSvg.svg#svg-globus"></use>
+                            </svg>
+                          </i>
+                          <span>Языки обучения: Английский</span>
+                        </li>
+                      </ul>
+                      <!--===price + buttons ===-->
+                      <div class="scool-row">
+                        <!--==== цена + программы ====-->
+                        <div class="scool-row__group">
+                          <div class="price-block price-block--16">от <span>2000 &dollar;</span>/неделя</div>
+                          <button class="show-scool-programs">
+                            <span>Программы <span 4="4"></span>
+                            </span>
+                            <i class="changing-icon"></i>
+                          </button>
+                        </div>
+                        <!--=== ссылка Перейти ===-->
+                        <div class="scool-row__link">
+                          <a class="btn flex-row" href="#!">
+                            <span>Перейти </span>
+                            <span>к учебному заведению</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--==== программы-выпадающая таблица====-->
+                    <div class="scool-drop">
+                      <table class="scool-table">
+                        <thead>
+                          <tr>
+                            <th class="cell-name">Программы</th>
+                            <th class="cell-age">Возраст</th>
+                            <!--==== класс active  переключается у выбранной валюты оплаты ====-->
+                            <th class="cell-price">Выбрать <span class="pay-cur active">€</span>|<span class="pay-cur">₽</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li class="active">36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="scool-card">
+                  <!--===== картинка =====-->
+                  <div class="scool-picture">
+                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <div class="rating-label">9.6</div>
+                  </div>
+                  <!--====верхний ряд, видимый =====-->
+                  <div class="scool-info">
+                    <!--===== описание =====-->
+                    <div class="scool-descrip">
+                      <div class="h5">Wildau Studienkolleg</div>
+                      <!--=== list ====-->
+                      <ul class="scool__list">
+                        <li>
+                          <i>
+                            <svg class="svg-cap">
+                              <use href="./img/spriteSvg.svg#svg-cap"></use>
+                            </svg>
+                          </i>
+                          <span>Частная школа совместного обучения</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-pin">
+                              <use href="./img/spriteSvg.svg#svg-pin"></use>
+                            </svg>
+                          </i>
+                          <span>Великобритания, Кроуторн</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-globus">
+                              <use href="./img/spriteSvg.svg#svg-globus"></use>
+                            </svg>
+                          </i>
+                          <span>Языки обучения: Английский</span>
+                        </li>
+                      </ul>
+                      <!--===price + buttons ===-->
+                      <div class="scool-row">
+                        <!--==== цена + программы ====-->
+                        <div class="scool-row__group">
+                          <div class="price-block price-block--16">от <span>2000 &dollar;</span>/неделя</div>
+                          <button class="show-scool-programs">
+                            <span>Программы <span 4="4"></span>
+                            </span>
+                            <i class="changing-icon"></i>
+                          </button>
+                        </div>
+                        <!--=== ссылка Перейти ===-->
+                        <div class="scool-row__link">
+                          <a class="btn flex-row" href="#!">
+                            <span>Перейти </span>
+                            <span>к учебному заведению</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--==== программы-выпадающая таблица====-->
+                    <div class="scool-drop">
+                      <table class="scool-table">
+                        <thead>
+                          <tr>
+                            <th class="cell-name">Программы</th>
+                            <th class="cell-age">Возраст</th>
+                            <th class="cell-price">Выбрать <span class="pay-cur active">€</span>|<span class="pay-cur">₽</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="scool-card">
+                  <!--===== картинка =====-->
+                  <div class="scool-picture">
+                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <div class="rating-label">9.6</div>
+                  </div>
+                  <!--====верхний ряд, видимый =====-->
+                  <div class="scool-info">
+                    <!--===== описание =====-->
+                    <div class="scool-descrip">
+                      <div class="h5">Wildau Studienkolleg, Technical University of Applied Sciences Wildau</div>
+                      <!--=== list ====-->
+                      <ul class="scool__list">
+                        <li>
+                          <i>
+                            <svg class="svg-cap">
+                              <use href="./img/spriteSvg.svg#svg-cap"></use>
+                            </svg>
+                          </i>
+                          <span>Частная школа совместного обучения</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-pin">
+                              <use href="./img/spriteSvg.svg#svg-pin"></use>
+                            </svg>
+                          </i>
+                          <span>Великобритания, Кроуторн</span>
+                        </li>
+                        <li>
+                          <i>
+                            <svg class="svg-globus">
+                              <use href="./img/spriteSvg.svg#svg-globus"></use>
+                            </svg>
+                          </i>
+                          <span>Языки обучения: Английский</span>
+                        </li>
+                      </ul>
+                      <!--===price + buttons ===-->
+                      <div class="scool-row">
+                        <!--==== цена + программы ====-->
+                        <div class="scool-row__group">
+                          <div class="price-block price-block--16">от <span>2000 &dollar;</span>/неделя</div>
+                          <button class="show-scool-programs">
+                            <span>Программы <span 4="4"></span>
+                            </span>
+                            <i class="changing-icon"></i>
+                          </button>
+                        </div>
+                        <!--=== ссылка Перейти ===-->
+                        <div class="scool-row__link">
+                          <a class="btn flex-row" href="#!">
+                            <span>Перейти </span>
+                            <span>к учебному заведению</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!--==== программы-выпадающая таблица====-->
+                    <div class="scool-drop">
+                      <table class="scool-table">
+                        <thead>
+                          <tr>
+                            <th class="cell-name">Программы</th>
+                            <th class="cell-age">Возраст</th>
+                            <!--==== класс active  переключается у выбранной валюты оплаты ====-->
+                            <th class="cell-price">Выбрать <span class="pay-cur active">€</span>|<span class="pay-cur">₽</span>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!--===== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>INTO International Graduate Diploma</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <!--=====price cell =====-->
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <!--=====price cell drop=====-->
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li class="active">36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>GCSE</p>
+                            </td>
+                            <td class="cell-age">16-17</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/2 недели
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>A-Level</p>
+                            </td>
+                            <td class="cell-age">14-15</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/месяц
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <!--====== single row ====-->
+                          <tr>
+                            <td class="cell-name">
+                              <p>IB</p>
+                            </td>
+                            <td class="cell-age">18-21</td>
+                            <td class="cell-price">
+                              <div class="cell-price__btn">
+                                <a href="#!">
+                                  <span>36 315€</span>/1год
+                                </a>
+                                <svg class="svg-chevron-down">
+                                  <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                                </svg>
+                              </div>
+                              <div class="cell-price__drop">
+                                <ul>
+                                  <li>36 315€/2 недели</li>
+                                  <li>72 315€/4 недели</li>
+                                  <li>96 315€/6 месяцев</li>
+                                  <li>105 315€/1 год</li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--=====btn + pagination =====-->
+              <div class="justify-group mt-48">
+                <button class="btn-br-white h-40" type="button">Показать еще</button>
+                <!--=====пагинация====-->
+                <div class="pagination">
+                  <a class="page-num prev disable" href="#!"></a>
+                  <a class="page-num" href="#!">1</a>
+                  <a class="page-num" href="#!">2</a>
+                  <a class="page-num active" href="#!">3</a>
+                  <a class="page-num" href="#!">...</a>
+                  <a class="page-num" href="#!">22</a>
+                  <a class="page-num next" href="#!"></a>
+                </div>
+              </div>
+            </article>
+            <!--====== section=====-->
+            <article class="catalogy-page-article">
+              <div class="catalogy-lists">
+                <div class="catalogy-list">
+                  <div class="txt-20">Преимущества</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>Всестороннее развитие личности</li>
+                      <li>Подготовка к топовым вузам</li>
+                      <li>500+ частных школ-пансионов</li>
+                      <li>Самые высокие результаты IB</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalogy-list">
+                  <div class="txt-20">Программы обучения</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>GCSE</li>
+                      <li>A-Levels</li>
+                      <li>IB</li>
+                      <li>US High school</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="catalogy-list">
+                  <div class="txt-20">Стоимость обучения</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>Средняя школа: от £23 000</li>
+                      <li>Старшая школа: от £23 000</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="text-block">
+              <p>В каталоге программ Allterra Education подробно описаны направления обучения и уровни образования за рубежом, которые пользуются популярностью и обеспечивают получение необходимых квалификаций и дипломов. Представленные здесь школы, университеты, детские лагеря и языковые курсы проверены многолетним опытом сотрудничества с нашим агентством. Благодаря постоянным контактам с руководством учебных заведений и отзывам учеников, мы всегда уверены в своих рекомендациях для новых студентов Allterra Education.</p>
+              <p>Кроме рейтинговых и всемирно известных образовательных центров, мы сотрудничаем с сотнями государственных и частных зарубежных учебных заведений, которые дают качественное и востребованное образование. Поступить в такие школы и университеты за рубежом гораздо легче, чем в Итон, MIT, Кембридж или Мюнхенский технический университет, но в них так же гарантировано качественное образование и великолепные карьерные перспективы.</p>
+              <!--====== Перспективы=====-->
+            </article>
+            <article class="prospects">
+              <h2 class="h3">Перспективы</h2>
+              <ul class="services-list">
+                <li class="grid-12">
+                  <div class="txt-20">Поступление в лучшие вузы</div>
+                  <p>Выпускники средних школ Великобритании имеют высокие шансы на поступление не только в известные национальные университеты, но и в учебные заведения США, Европы и Азии, ведь британские дипломы признаются по всему миру. Благодаря британской программе A-Levels старшеклассники могут изучать только предметы, которые пригодятся для поступления, и лучше подготовиться к экзаменам</p>
+                </li>
+                <li class="grid-12">
+                  <div class="txt-20">Трудоустройство после выпуска</div>
+                  <p>Ещё во время обучения многие студенты проходят стажировки, которые находят с помощью карьерных центров в университете. После окончания вуза иностранцы могут получить специальную визу Graduate route visa и остаться в Великобритании на два-три года для поиска постоянной работы</p>
+                </li>
+                <li class="grid-12">
+                  <div class="txt-20">Быстрое обучение</div>
+                  <p>Британские студенты тратят значительно меньше времени на получение высшего образования. Продолжительность программ бакалавриата составляет три года, магистратуры – всего 1 год</p>
+                </li>
+              </ul>
+              <!--====image====-->
+              <div class="img-banner__picture">
+                <picture>
+                  <source srcset="./img/catalogy/catalogy-mobile.webp" media="(max-width: 767px)">
+                  <img class="lazy" src="./img/catalogy/catalogy.webp" width="925" height="540" alt="image">
+                </picture>
+              </div>
+            </article>
+            <!--========условия поступления ====-->
+            <article class="checker">
+              <h2 class="h3">Вступительные требования</h2>
+              <div class="checker-content">
+                <!--===single block ===-->
+                <div class="checker-block">
+                  <div class="txt-20">Бакалавриат</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>Диплом A-Levels или Foundation (или 1 курс бакалавриата в России)</li>
+                      <li>IELTS 6.5</li>
+                      <li>Средний балл в аттестате не ниже 4.0</li>
+                      <li>Мотивационное письмо</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--===single block ===-->
+                <div class="checker-block">
+                  <div class="txt-20">Магистратура</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>Законченное высшее образование</li>
+                      <li>IELTS 6.5</li>
+                      <li>Опыт работы (опционально)</li>
+                      <li>Рекомендации</li>
+                      <li>Мотивационное письмо</li>
+                      <li>Средний балл в аттестате не ниже 4.0</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--===single block ===-->
+                <div class="checker-block">
+                  <div class="txt-20">Бакалавриат</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>Диплом A-Levels или Foundation (или 1 курс бакалавриата в России)</li>
+                      <li>IELTS 6.5</li>
+                      <li>Средний балл в аттестате не ниже 4.0</li>
+                      <li>Мотивационное письмо</li>
+                    </ul>
+                  </div>
+                </div>
+                <!--===single block ===-->
+                <div class="checker-block">
+                  <div class="txt-20">Магистратура</div>
+                  <div class="list-block">
+                    <ul>
+                      <li>Законченное высшее образование</li>
+                      <li>IELTS 6.5</li>
+                      <li>Опыт работы (опционально)</li>
+                      <li>Рекомендации</li>
+                      <li>Мотивационное письмо</li>
+                      <li>Средний балл в аттестате не ниже 4.0</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="text-block mt-40">
+                <p>Не знаете, с чего начать при подборе центра языковой подготовки? <a class="accent-link" href="#get-consultation">Свяжитесь с нашим онлайн-консультантом.</a> Специалист Allterra Education в индивидуальном порядке подберёт для вас удобные и выгодные варианты изучения иностранного языка в приоритетной стране.</p>
+              </div>
+            </article>
+            <!--====== importance-choice ====-->
+            <article id="importance-choice">
+              <h2 class="h3">Почему важно правильно подобрать учебное заведение</h2>
+              <p> Выбор учебного заведения за границей — важный шаг. Каждая школа Великобритании и каждый университет США имеют свои традиции и особенности обучения. Эксперты по международному образованию Allterra Education помогут вам выбирать вариант, который максимально соответствует интересам, потребностям, способностям и характеру будущего студента.</p>
+              <p>Правильный выбор упрощает поступление в желаемую школу или университет, учитывая сильные стороны поступающего. Наконец, если учебное заведение за рубежом вам действительно подходит, учиться в нём будет максимально комфортно.</p>
+              <p>При подборе вуза или школы за рубежом мы учитываем и позицию учебного заведения в мировых рейтингах и результаты, которые демонстрируют выпускники. Это важно для практического применения полученного образования и первых шагов в карьере молодого специалиста.
+                <br> Поиск и анализ информации требует значительных затрат времени. В каталоге учебных заведений Allterra Education представлены школы, университеты и языковые курсы за рубежом, которые проверены многолетним сотрудничеством и отличными результатами выпускников.
+              </p>
+            </article>
+            <!--====== importance-choice ====-->
+            <article id="feature-education">
+              <h2 class="h3">Особенности образования в разных странах</h2>
+              <p> Образование за границей служит фундаментом для успешной международной карьеры, но только в том случае, если вы правильно выбрали страну обучения. Образовательные системы в Европе и США складывались веками, и каждая из них имеет свои особенности, ценности и традиции. Например, сравнивая школы США со школами Швейцарии, вы найдёте совершенно разные подходы к обучению. При этом и школы, и университеты этих стран традиционно входят в число лучших в мире.</p>
+            </article>
+            <!--====== education in Switzerland ====-->
+            <article id="education-switzerland">
+              <h2 class="h3">Обучение в Швейцарии</h2>
+              <p>Максимальное разнообразие учебных программ лежит в основе обучения в школах Швейцарии. В зависимости от того, в каком кантоне находится школа, можно найти и немецкий Abitur, и французский бакалавриат, а также международный курс International Baccalaureate (IB), который позволяет получать высшее образование за рубежом в большинстве европейских стран. В дополнение многие швейцарские школы имеют статус международных и предлагают американские и британские программы обучения.</p>
+              <p>В университетах Швейцарии наблюдается то же разнообразие. Учёба возможна на четырёх языках — английском, немецком, французском или итальянском. Наполнение учебных программ каждый из вузов Швейцарии продумывает самостоятельно, поэтому индивидуальный стиль обучения — визитная карточка всех швейцарских учебных заведений.</p>
+              <!--====image====-->
+              <div class="img-banner__picture">
+                <picture>
+                  <source srcset="./img/catalogy/education-mob.webp" media="(max-width: 767px)">
+                  <img class="lazy" src="./img/catalogy/education.webp" width="925" height="540" alt="image">
+                </picture>
+              </div>
+            </article>
+            <!--====== education in usa ====-->
+            <article id="education-usa">
+              <h2 class="h3">Обучение в США</h2>
+              <p>редние школы США дают студенту максимальную свободу, позволяя выбирать желаемые курсы в соответствии с его склонностями и дальнейшими планами. Это не означает, что можно отказаться от обязательной математики, но, например, будущий биолог может не тратить в старшей школе время на изучение творческих дисциплин. Многие учебные заведения предлагают курсы Advanced Placement. При успешном изучении предметов с повышенным уровнем сложности абитуриенты получают дополнительные преимущества при поступлении в университеты США. Американские вузы реализуют максимально практический подход к обучению. При выборе учебного заведения за рубежом стоит обратить внимание на профиль исследований университета, поскольку студенты как бакалавриата, так и магистратуры принимают в них активное участие.</p>
+            </article>
+            <!--====== education in uk ====-->
+            <article id="education-uk">
+              <h2 class="h3">Обучение в Англии</h2>
+              <div class="two-columns">
+                <p>Частные школы Великобритании являются старейшими в мире. Университеты Великобритании также ведут свою образовательную историю на протяжении многих веков. Британские учебные заведения выделяют в числе приоритетов не только обучение, но и воспитание студентов, развитие личностных качеств. Большинство школ Великобритании готово принимать студентов на пансион с 11 лет и предлагает максимально разнообразный учебный план, а также большое количество дополнительных опций — спорт, музыка и творчество являются неотъемлемой частью обучения.</p>
+                <!--====== картинка ======-->
+                <img class="lazy" src="./img/catalogy/edu-uk.webp" width="450" alt="img">
+              </div>
+              <div class="two-columns two-columns--reverce">
+                <!--====== картинка ======-->
+                <img class="lazy" src="./img/catalogy/edu-uk2.webp" width="450" alt="img">
+                <!--==== text =====-->
+                <p>Частные школы Великобритании являются старейшими в мире. Университеты Великобритании также ведут свою образовательную историю на протяжении многих веков. Британские учебные заведения выделяют в числе приоритетов не только обучение, но и воспитание студентов, развитие личностных качеств. Большинство школ Великобритании готово принимать студентов на пансион с 11 лет и предлагает максимально разнообразный учебный план, а также большое количество дополнительных опций — спорт, музыка и творчество являются неотъемлемой частью обучения.</p>
+              </div>
+            </article>
+            <!--====== education in germany ====-->
+            <article id="education-germany">
+              <h2 class="h3">Обучение в Германии</h2>
+              <p>Стоимость обучения в Германии одна из наиболее доступных в Европе, что нисколько не снижает качество предлагаемого образования. Особое внимание в школах Германии уделяют иностранным языкам — помимо современных преподаются латынь и древнегреческий. Здесь активно используют не только традиционные для обучения за рубежом тесты, но и другие методы оценки знаний учеников, например, эссе и устные опросы. Обучение в средней школе длится 13 лет.</p>
+              <p>Университеты Германии славятся своим технических образованием, которое является таким же брендом страны, как техника Bosch или автомобили Mercedes. Немецкие технические разработки используются по всему миру, а диплом инженера или любого другого технического специалиста открывает перед выпускником множество перспектив. В вузах Германии всё ещё сохранилось бесплатное образование для иностранцев при условии владения немецким языком.</p>
+            </article>
+            <!--======= feedback form =====-->
+            <article id="get-consultation">
+              <form class="consultation-form">
+                <p class="h3">Нужна консультация?</p>
+                <!--=====строка с двумя инпутами ====-->
+                <div class="two-columns">
+                  <div class="form_field">
+                    <input type="text" name="name" placeholder="Ваше имя*">
+                  </div>
+                  <div class="form_field">
+                    <input type="text" name="phone" placeholder="Ваш телефон*">
+                  </div>
+                </div>
+                <div class="form_field">
+                  <input type="text" name="email" placeholder="Ваш email">
+                </div>
+                <!--=====строка с двумя компонентами ====-->
+                <div class="flex-row">
+                  <div class="form-confirm">
+                    <label class="form-checkbox">
+                      <input type="checkbox" name="name_chk">
+                      <span class="fake-checkbox"></span>
+                      <span class="form-confirm__text">Ознакомился с <a class="accent-link" href="#!">политикой конфидециальности</a> и даю своё согласие на обработку персональных данных</span>
+                    </label>
+                  </div>
+                  <button class="btn-white" type="submit">Получить консультацию</button>
+                </div>
+              </form>
+            </article>
+            <!--======= стоимость образования за рубежом =====-->
+            <article id="cost-edu-board">
+              <h2 class="h3">Стоимость обучения за границей</h2>
+              <p>Allterra Education — представитель учебных заведений, и вы всегда платите за обучение столько, сколько это стоит в самой школе или в университете.</p>
+            </article>
+            <!--======= стоимость среднего образования=====-->
+            <article id="cost-edu-secondary">
+              <div class="two-columns">
+                <div class="article-column">
+                  <h2 class="h3">Стоимость среднего образования</h2>
+                  <p>Стоимость обучения за рубежом зависит от выбранной страны, формы обучения и престижа учебного заведения. Самой дорогой учёба за рубежом будет в Швейцарии, Великобритании и США, а в качестве относительно бюджетного варианта можно рассматривать Францию и Германию.</p>
+                  <p>В стоимость получения среднего образования входит не только непосредственно учеба в школе. Большинству иностранных учеников необходимо размещение в резиденции (кампусе школы). Кроме того, значительную сумму к стоимости года обучения могут прибавить дополнительные занятия, такие, например, как автоспорт или конная выездка. Более традиционные дополнительные занятия, такие как плавание, футбол или музыка, обычно включены в стоимость обучения. Все эти критерии влияют на стоимость обучения за границей, и их нужно учесть до поступления.</p>
+                </div>
+                <!--====image====-->
+                <div class="img-banner__picture">
+                  <picture>
+                    <source srcset="./img/catalogy/education2-mob.webp" media="(max-width: 767px)">
+                    <img class="lazy" src="./img/catalogy/education2.webp" width="450" alt="image">
+                  </picture>
+                </div>
+              </div>
+            </article>
+            <!--======= стоимость высшего образования=====-->
+            <article id="cost-edu-higher">
+              <h2 class="h3">Стоимость высшего образования в Европе и Америке</h2>
+              <p>На уровне высшего образования стоимость учёбы за границей может равняться нулю, например, в отдельных университетах Германии (при условии обучения на национальном языке), однако это не избавляет студента от необходимости организационных взносов, а также оплаты проживания и питания. При поступлении в университет США важно учитывать, что во многих из них студенты первых курсов обязаны жить в резиденции. При планировании расходов нужно включать в перечень книги и учебные материалы, так как студенты покупают их самостоятельно.</p>
+              <p>Языковые программы в Европе и США можно найти практически для любой планируемой стоимости обучения за рубежом. Учебные заведения за границей предлагают как групповые, так и индивидуальные занятия, и последние стоят в разы выше первых. Дополнительные опции, например, подготовка к языковым экзаменам международного образца или курс бизнес-лексики, также повышают стоимость. Наконец, при выборе варианта обучения стоит обратить внимание на бытовые условия. Студентам языковых школ доступны как весьма дорогостоящие, например, отели класса люкс, так и бюджетные опции, например, проживание в принимающей семье.</p>
+              <p>В каталоге учебных программ на сайте Allterra Education есть варианты курсов для любого возраста и уровня подготовки студентов с учётом планируемого бюджета обучения. Это помогает максимально точно оценить планируемые затраты при поступлении в школу или университет за рубежом.</p>
+            </article>
+            <!--======= Перспективы после образования=====-->
+            <article id="edu-prospects">
+              <h2 class="h3">Перспективы студента после обучения за рубежом</h2>
+              <p>Профессиональные перспективы выпускников, прошедших обучение за рубежом, существенно лучше, чем у их российских ровесников. Обучаясь за границей, студенты в совершенстве овладевают иностранным языком, приобретают глобальный взгляд на мир, знакомятся с наиболее перспективными исследованиями в будущей профессии.</p>
+              <p>Стажировка является обязательной частью обучения для большинства студентов, проходящих обучение за рубежом. Часто таким образом можно найти работу по специальности ещё до получения степени. Многие страны предлагают иностранным студентам льготные условия последующего поиска работы, например, дополнительное время проживания по студенческой визе.</p>
+              <p>Университеты Швейцарии тесно сотрудничают с бизнесом, поэтому талантливые выпускники не испытывают проблем с трудоустройством. Вузы США занимают лидирующие позиции в мировых образовательных рейтингах и дают выпускникам, выбравшим образование за границей, шанс сделать карьеру в любой точке мира.</p>
+              <!--====image====-->
+              <div class="img-banner__picture">
+                <picture>
+                  <source srcset="./img/catalogy/education3-mob.webp" media="(max-width: 767px)">
+                  <img class="lazy" src="./img/catalogy/education3.webp" width="925" height="540" alt="image">
+                </picture>
+              </div>
+            </article>
+            <!--======= Выбор учебного заведения=====-->
+            <article id="edu-choosing">
+              <h2 class="h3">Выбор учебного заведения с Allterra Education</h2>
+              <p>Качественное образование — фундамент успешного будущего. Мы предлагаем вам удобный и комфортный выбор материалов, инструментов для закладки этого фундамента. Allterra Education позволяет подбирать учреждения быстро и с учётом важных для вас параметров.</p>
+              <p>Наш каталог будет полезен тем, кто желает самостоятельно изучить ассортимент предложений от школ, вузов или языковых центров. Он удобен и прост в использовании, максимально информативен.</p>
+              <p>Если на страницах портала вы не найдете ответов на интересующие вопросы относительно обучения за рубежом, наши специалисты всегда готовы предоставить экспертную онлайн- и телефонную консультацию. Менеджеры Allterra Education всегда на связи: для общения с экспертами вы можете использовать доступные телекоммуникационные каналы: телефон (многоканальный бесплатный номер, заказ обратного звонка), интернет (электронная почта, Skype, формы онлайн-запросов на сайте).</p>
+            </article>
+            <!--=========услуги======-->
+            <article class="catalogy-services">
+              <h2 class="h4">Специалисты Allterra Education оказывают следующие услуги:</h2>
+              <div class="list-block">
+                <ul>
+                  <li>Профессиональные консультации по обучению за рубежом</li>
+                  <li>Помощь со сдачей вступительных экзаменов</li>
+                  <li>Сбор и оформление необходимых документов</li>
+                  <li>Поиск вариантов проживания</li>
+                  <li>Визовая поддержка</li>
+                  <li>Организация отъезда</li>
+                  <li>Курирование в течение учёбы</li>
+                </ul>
+              </div>
+            </article>
+            <!--=====ответы на вопросы =====-->
+            <article class="faq">
+              <h2 class="h3">Ответы на важные вопросы об учёбе в Великобритании</h2>
+              <div class="faq-acordion">
+                <!--=========acordion========-->
+                <div class="accordion-group">
+                  <!--=======single item =====-->
+                  <div class="accordion-header">В чем особенность системы образования в Великобритании?</div>
+                  <div class="accordion-body">
+                    <p>Система обязательного школьного образования включает в себя четыре этапа – подготовку к школе (5-7 лет), начальную (7-11 лет), среднюю (11-14 лет) и старшую (14-16 лет) школу.</p>
+                    <p>По завершении старшей школы ученики сдают экзамены GCSE по основным предметам, после чего можно перейти к предуниверситетской подготовке (Sixth Form) или продолжить обучение в колледже или институте дополнительного образования для получения специальности.</p>
+                    <p>Многие вузы Великобритании предполагают довузовскую подготовку Foundation Year, где будущих студентов знакомят с особенностями высшего образования и релевантными их потенциальной программе дисциплинами.</p>
+                    <p>Высшее образование разделено на два уровня: Undergraduate (программы бакалавриата) и Postgraduate (магистратура и докторантура)</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Можно ли учиться бесплатно?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Какой уровень образования в стране?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Сколько требуется средств для проживания и обучения в Великобритании?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Как поступить учиться в Англию из России?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Можно ли учиться в Великобритании без A-Levels?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Образование по каким специальностям в Великобритании высоко ценится во всем мире?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">С какого возраста можно отправить ребенка на обучение в Великобританию?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Нужен ли знать английский в совершенстве для обучения в Великобритании?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Можно ли сменить специальность в магистратуре?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                  <!--=======single item =====	-->
+                  <div class="accordion-header">Как выбрать учебное заведение?</div>
+                  <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nostrum error hic illum eius consequatur molestiae repellat fugiat quae porro cum excepturi nulla fugit, vero suscipit minus exercitationem quam veritatis!</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!--========= phone numbers===========-->
+            <article class="consultation-phones">
+              <h2 class="h4">Для записи на бесплатную консультацию звоните:</h2>
+              <div class="three-columns">
+                <!--=====single card =====-->
+                <a class="phone-card" href="tel:+7(499)9384440">
+                  <p>Москва</p>
+                  <div class="txt-20">+7 (499) 938-44-40</div>
+                </a>
+                <!--=====single card =====-->
+                <a class="phone-card" href="tel:+7(812)425-64-25">
+                  <p>Санкт-Петербург</p>
+                  <div class="txt-20">+7 (812) 425-64-25</div>
+                </a>
+                <!--=====single card =====-->
+                <a class="phone-card" href="tel:+7(800)511-49-93">
+                  <p>Россия | бесплатный звонок</p>
+                  <div class="txt-20">+7 (800) 511-49-93</div>
+                </a>
+              </div>
+            </article>
+            <!--============== Helpful ======-->
+            <article class="helpful">
+              <h2 class="h4 accent-border">Полезные материалы:</h2>
+              <!--======= single item ========-->
+              <div class="helpful-item">
+                <div class="h6">Как выбрать страну для образования?</div>
+                <p>Tortor dignissim convallis aenean et tortor at risus viverra. Interdum velit euismod in pellentesque massa placerat duis. Nibh tortor id aliquet lectus proin.</p>
+                <a class="accent-link" href="#!">Подробнее</a>
+              </div>
+              <!--======= single item ========-->
+              <div class="helpful-item">
+                <div class="h6">Как сделать портфолио для поступления в университет?</div>
+                <p>Fusce id velit ut tortor pretium viverra suspendisse potenti nullam. Maecenas accumsan lacus vel facilisis volutpat est velit</p>
+                <a class="accent-link" href="#!">Подробнее</a>
+              </div>
+              <!--======= single item ========-->
+              <div class="helpful-item">
+                <div class="h6">Как написать академическое эссе для поступления в университет?</div>
+                <p>Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Eget mauris pharetra et ultrices neque ornare aenean. Lobortis scelerisque fermentum dui faucibus in ornare</p>
+                <a class="accent-link" href="#!">Подробнее</a>
+              </div>
+              <!--======= single item ========-->
+              <div class="helpful-item">
+                <div class="h6">Как написать рекомендательное письмо для поступления в университет?</div>
+                <p>Luctus venenatis lectus magna fringilla urna porttitor. Orci dapibus ultrices in iaculis nunc. Libero volutpat sed cras ornare arcu. Mi sit amet mauris commodo quis imperdiet massa tincidunt. Consectetur purus ut faucibus pulvinar elementum integer enim neque</p>
+                <a class="accent-link" href="#!">Подробнее</a>
+              </div>
+              <!--======= single item ========-->
+              <div class="helpful-item">
+                <div class="h6">Где получить бизнес-образование за рубежом?</div>
+                <p>Ut morbi tincidunt augue interdum velit. Sapien et ligula ullamcorper malesuada proin. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor</p>
+                <a class="accent-link" href="#!">Подробнее</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!--======== BLOG CARDS ========-->
+      </div>
+    </section>
+    <!--======= news cards slider =======-->
+    <section class="blog light-bg">
+      <div class="container">
+        <!--======= SECTION TOP ROW=======-->
+        <div class="header-group w-100">
+          <h2 class="h2 accent-border">Новости и Статьи</h2>
+          <div class="btns-group">
+            <a class="btn--slim btn-white" href="#!">Все новости</a>
+            <a class="btn--slim btn" href="#!">Все статьи</a>
+          </div>
+        </div>
+        <!--======= SECTION SLIDER =======-->
+        <div class="slider-wrapper">
+          <!--======== slider-content =======-->
+          <div class="blog-cards-slider swiper">
+            <div class="swiper-wrapper">
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom blog-card--full">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Статья</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> Как написать мотивационное письмо в&nbsp;университет?</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/2.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Новость</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> Экономическое образование в США</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/3.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Статья</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> Техническое образование в Германии</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/4.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Новость</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Статья</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> Как написать мотивационное письмо в&nbsp;университет?</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/2.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Новость</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> Экономическое образование в США</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/3.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Статья</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> Техническое образование в Германии</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+              <!--===== single slide ========-->
+              <div class="swiper-slide">
+                <div class="blog-card img-zoom">
+                  <div class="blog-card__img">
+                    <img class="wh-100 lazy" src="./img/blog/4.webp" width="295" height="194" alt="img" />
+                  </div>
+                  <a class="blog-card__text" href="#!">
+                    <div class="blog-card__info txt-14">
+                      <span>Новость</span>
+                      <time datetime="2024-03-12">12.03.2024</time>
+                    </div>
+                    <h3 class="txt-16"> IELTS или TOEFL: что лучше для поступления в университет</h3>
+                    <p></p>
+                    <span class="accent-link">Подробнее</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--===== swiper navigation========-->
+          <div class="slider-nav">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <!--========VISIBLE MOBILE =======-->
+          <div class="btns-group">
+            <a class="btn--slim btn-white" href="#!"> Все новости</a>
+            <a class="btn--slim btn" href="#!">Все статьи</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--============ CONTACTS ================-->
+    <section class="contacts dark-bg">
+      <div class="container">
+        <form class="contacts-form dark-opacity">
+          <p class="h3">Задать вопрос</p>
+          <div class="form_field">
+            <input type="text" name="name" placeholder="Ваше имя*">
+          </div>
+          <div class="form_field">
+            <input type="text" name="phone" placeholder="Ваш телефон*">
+          </div>
+          <div class="form_field">
+            <input type="text" name="email" placeholder="Ваш email">
+          </div>
+          <!--====== эелемент .message-field  имеет высоту в зависимости от количества  напечатанного в него текста. То есть высота меняется динамично =======-->
+          <div class="form_field">
+            <p class="message-field" contenteditable="true" placeholder="Ваш вопрос"></p>
+          </div>
+          <div class="form-confirm">
+            <label class="form-checkbox">
+              <input type="checkbox" name="name_chk">
+              <span class="fake-checkbox"></span>
+              <span class="form-confirm__text">Ознакомился с <a class="white-link" href="#!">политикой конфидециальности</a> и даю своё согласие на обработку персональных данных</span>
+            </label>
+          </div>
+          <div class="form__btn">
+            <button class="btn-white w-100" type="submit">Получить консультацию</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!--=============FOOTER============-->
+  <footer class="footer light-bg">
+    <div class="container">
+      <div class="footer-row two-columns">
+        <!--=======nav lists=====-->
+        <div class="footer-nav two-columns">
+          <!--=======sincle list ======-->
+          <nav>
+            <a href="#!">О компании</a>
+            <a href="#!">Услуги</a>
+            <a href="#!">Вакансии</a>
+            <a href="#!">Каникулы</a>
+            <a href="#!">Университеты</a>
+            <a href="#!">Как выбрать программу</a>
+          </nav>
+          <!--=======sincle list ======-->
+          <nav>
+            <a href="#!">Обращение директора</a>
+            <a href="#!">Сотрудничество</a>
+            <a href="#!">Partner`s zone</a>
+            <a href="#!">Школы</a>
+            <a href="#!">Контакты</a>
+          </nav>
+        </div>
+        <!--====== footer-contacts =======-->
+        <div class="footer-contacts two-columns">
+          <!--=======contacts col ====-->
+          <div class="footer-contacts__col">
+            <div class="contact-group">
+              <span class="contact-name">Телефон</span>
+              <a href="tel:88005114993">8(800) 511-4993</a>
+            </div>
+            <div class="contact-group">
+              <span class="contact-name">Время работы</span>
+              <p>с 10:00 до 19:00 (пн-пт)</p>
+            </div>
+            <div class="social">
+              <a class="social-item" href="#!">
+                <img src="./img/icons/skype.svg" alt="icon">
+              </a>
+              <a class="social-item" href="#!">
+                <img src="./img/icons/vk.svg" alt="icon">
+              </a>
+            </div>
+          </div>
+          <!--=======contacts col ====-->
+          <div class="footer-contacts__col">
+            <address class="contact-group">
+              <p>
+                <strong>Москва</strong>
+                <br> ул. Тверская, д. 7
+                <br>
+                <a class="accent-link" href="#!">На карте</a>
+              </p>
+            </address>
+            <address class="contact-group">
+              <p>
+                <strong>Санкт-Петербург</strong>
+                <br> ул. Введенского канала, 7
+                <br>
+                <a class="accent-link" href="#!">На карте</a>
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom flex-center-y">
+        <div class="accreditation-short flex-center-y">
+          <div class="accredit-logo">
+            <img src="./img/accredit/logo1.webp" width="138" height="60" alt="img">
+          </div>
+          <div class="accredit-logo">
+            <img src="./img/accredit/logo2.webp" width="116" height="60" alt="img">
+          </div>
+          <div class="accredit-logo">
+            <img src="./img/accredit/logo3.webp" width="60" height="60" alt="img">
+          </div>
+          <div class="accredit-logo">
+            <img src="./img/accredit/logo4.webp" width="138" height="60" alt="img">
+          </div>
+        </div>
+        <a class="grey-link" href="#!">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+  <!--======  BOTTOM FIXED BUTTONS =======-->
+  <div class="fixed-buttons" id="fixed-buttons">
+    <a class="btn-accent" href="#!">Задать вопрос</a>
+    <a class="btn" href="#!">
+      <svg class="svg-phone">
+        <use href="./img/spriteSvg.svg#svg-phone"></use>
+      </svg>
+      <span>Позвонить</span>
+    </a>
+  </div>
+  <!--=============== jquery ===================-->
+  <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+  <!--=============== jquery lazy load===================-->
+  <script src="./libs/jquery.lazy.min.js"></script>
+  <!--========= swiper slider =================-->
+  <script src="./libs/swiper/swiper.js"></script>
+  <!--=============== мои скрипты ===================-->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
