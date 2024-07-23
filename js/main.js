@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", function (){
 				
 			}else{
 				const maxAllowedHeight = window.innerHeight - 186 + 'px';
-				 const maxHeight = dynamicMenuList.scrollHeight + 'px';
+				const maxHeight = dynamicMenuList.scrollHeight + 'px';
 				if (dynamicMenuList.style.maxHeight === '0px' || dynamicMenuList.style.maxHeight === '') {
 					if (dynamicMenuList.scrollHeight > window.innerHeight - 186) {
 						dynamicMenuList.style.maxHeight = maxAllowedHeight;
