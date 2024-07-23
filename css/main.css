@@ -9124,7 +9124,9 @@ header .logo {
     padding: 0;
     height: 480px;
     overflow: hidden;
-    max-width: 335px;
+    /* max-width: 335px; */
+    max-width: 450px;
+    margin-inline: auto;
   }
 
   .scool-card .scool-picture {
@@ -9377,12 +9379,11 @@ header .logo {
 }
 
 @media (max-width: 699px) {
-  .chief-card,
+ 
   .person-card {
     padding: 20px 16px;
   }
 
-  .chief-card .person__info,
   .person-card .person__info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9539,6 +9540,20 @@ header .logo {
     -webkit-column-gap: 20px;
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+  .chief-card{
+    padding: 20px 16px;
+  }
+
+  .chief-card .person__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 20px;
   }
 }
 
