@@ -371,7 +371,18 @@ document.addEventListener("DOMContentLoaded", function (){
 				dynamicMenuBtn.classList.remove('active');
 				
 			}else{
-				dynamicMenuList.style.maxHeight = dynamicMenuList.scrollHeight + 'px';
+				const maxAllowedHeight = window.innerHeight - 186 + 'px';
+				 const maxHeight = dynamicMenuList.scrollHeight + 'px';
+				if (dynamicMenuList.style.maxHeight === '0px' || dynamicMenuList.style.maxHeight === '') {
+					if (dynamicMenuList.scrollHeight > window.innerHeight - 186) {
+						dynamicMenuList.style.maxHeight = maxAllowedHeight;
+						dynamicMenuList.style.overflowY = 'auto';
+					} else {
+						dynamicMenuList.style.maxHeight = maxHeight;
+						dynamicMenuList.style.overflowY = 'hidden';
+					}
+				} 
+				
 				dynamicMenuBtn.classList.add('active');
 			}
 		});
