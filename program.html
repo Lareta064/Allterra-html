@@ -748,7 +748,7 @@
               </nav>
             </div>
             <div class="dynamic-menu__banner block-1024">
-              <img src="./img/institute/institute-logo.webp" width="295" height="295" alt="logo">
+              <img class="lazy" src="./img/institute/institute-logo.webp" width="295" height="295" alt="logo">
             </div>
           </div>
           <!--======= right column ======-->
@@ -758,8 +758,10 @@
             <article class="institute-slider-block">
               <div class="institute-slider">
                 <picture>
-                  <source srcset="./img/institute/1-mob.webp" media="(max-width: 767px)">
-                  <img class="lazy" src="./img/institute/1.webp" width="925" height="545" alt="image">
+                  <source srcset="./img/institute/img-w375.webp" media="(max-width: 767px)" width="328" height="194" type="image/webp">
+                  <source srcset="./img/institute/img-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="328" height="194">
+                  <source srcset="./img/institute/img@2x.webp" media="(min-resolution: 192dpi)" width="925" height="545" type="image/webp">
+                  <img class="lazy" src="./img/institute/img.webp" width="925" height="545" alt="image">
                 </picture>
               </div>
             </article>
@@ -1292,7 +1294,7 @@
                   <a class="btn btn--slim" href="#!">Узнать больше</a>
                 </div>
                 <div class="decore-block__img">
-                  <img src="./img/review/boy.webp" width="290px" alt="img">
+                  <img class="lazy" src="./img/review/boy.webp" width="290px" alt="img">
                 </div>
               </div>
               <!--===== location====-->
@@ -1300,9 +1302,7 @@
             <article class="institute-location anchor" id="anchor3">
               <h2 class="h3">Расположение 360 Institute of Management</h2>
               <p>Кампус института находится в районе Al Quoz 1, где есть магазины, кафе, мечети, школы, фитнес-центры, салоны красоты, семейные парки и центры отдыха. За 15-20 минут можно добраться до пляжей Опен-Бич, Джумейра-Бич и Сансет-Бич. В соседнем районе Бизнес-Бэй расположены офисы ведущих мировых компаний, дорогие отели и рестораны, а также канал Dubai Water Canal с живописными местами для прогулок.</p>
-              <div class="map">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6bc978176689faba087962d8000db1600dbb1ccebeeb99504035885ebbca41ce&amp;amp;width=100%&amp;amp;height=100%&amp;amp;lang=ru_RU&amp;amp;scroll=false"></script>
-              </div>
+              <div class="map" id="map"></div>
             </article>
             <!--======= feedback form =====-->
             <article id="feedback">
@@ -1345,9 +1345,7 @@
             </article>
             <!--===== virtual-tour ====-->
             <article class="virtual-tour" id="anchor6">
-              <div class="virtual-tour-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1555661292332!6m8!1m7!1sCAoSLEFGMVFpcE94cVozTV8taGxFcExyeWRjZUFEMTdpN1EwLXJCXzEtdkNlalVP!2m2!1d51.521975!2d-0.130462!3f140.5354761556658!4f18.14888093570754!5f0.7820865974627469" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-              </div>
+              <div class="virtual-tour-wrapper"></div>
             </article>
             <!--===== block====-->
             <article class="institute-description-block anchor" id="anchor7">
@@ -1360,8 +1358,10 @@
                 <!--=====IMG BLOCK ====-->
                 <div class="feedback-img">
                   <picture>
-                    <source srcset="./img/feedback2-mob.webp" media="(max-width: 767px)">
-                    <img class="lazy" src="./img/feedback2.webp" width="450" alt="image">
+                    <source srcset="./img/feedback2-w375.webp" media="(max-width: 767px)" width="450" height="450" type="image/webp" />
+                    <source srcset="./img/feedback2-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="450" height="450" />
+                    <source srcset="./img/feedback2@2x.webp" media="(min-resolution: 192dpi)" width="328" height="328" type="image/webp" />
+                    <img class="lazy wh-100" src="./img/feedback2.webp" width="328" height="328" alt="image" />
                   </picture>
                 </div>
                 <div class="feedback-form-wrapper">
@@ -1426,16 +1426,16 @@
                   <!--=======логотипы =====-->
                   <div class="accreditation-short accreditation-short--mini flex-center-y">
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo1.webp" width="138" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo1.webp" width="138" height="60" alt="img">
                     </div>
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo2.webp" width="116" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo2.webp" width="116" height="60" alt="img">
                     </div>
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo3.webp" width="60" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo3.webp" width="60" height="60" alt="img">
                     </div>
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo4.webp" width="138" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo4.webp" width="138" height="60" alt="img">
                     </div>
                   </div>
                   <!--====== кнопка ====-->
@@ -1669,7 +1669,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1956,7 +1956,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2243,7 +2243,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2530,7 +2530,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2817,7 +2817,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3104,7 +3104,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3285,7 +3285,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3466,7 +3466,7 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3840,7 +3840,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -3848,7 +3848,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -3875,6 +3875,66 @@
       </div>
     </div>
   </footer>
+  <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				function loadMapIframe() {
+					const mapWrapper = document.getElementById('map');
+					const iframe = document.createElement('iframe');
+					iframe.src = 'https://yandex.ru/map-widget/v1/?um=constructor%3A13e02d731c04b56220a2a064d1fa54db38ac5402f907fd4bdf75e632a107fa8e&source=constructor';
+					iframe.width = "100%";
+					iframe.height = "100%";
+					iframe.frameBorder = "0";
+					iframe.style.border = "0";
+					iframe.allowFullscreen = true;
+					mapWrapper.innerHTML = ''; // Очистить содержимое контейнера
+					mapWrapper.appendChild(iframe);
+				}
+			
+				function loadVirtualTourIframe() {
+					const iframeWrapper = document.querySelector('.virtual-tour-wrapper');
+					const iframe = document.createElement('iframe');
+					iframe.src = "https://www.google.com/maps/embed?pb=!4v1555661292332!6m8!1m7!1sCAoSLEFGMVFpcE94cVozTV8taGxFcExyeWRjZUFEMTdpN1EwLXJCXzEtdkNlalVP!2m2!1d51.521975!2d-0.130462!3f140.5354761556658!4f18.14888093570754!5f0.7820865974627469";
+					iframe.width = "100%";
+					iframe.height = "100%";
+					iframe.frameBorder = "0";
+					iframe.style.border = "0";
+					iframe.allowFullscreen = true;
+					iframeWrapper.innerHTML = ''; // Очистить содержимое контейнера
+					iframeWrapper.appendChild(iframe);
+				}
+			
+				// Создаем наблюдатель
+				const observer = new IntersectionObserver((entries, observer) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+						if (entry.target.id === 'map') {
+							loadMapIframe();
+						} else if (entry.target.classList.contains('virtual-tour-wrapper')) {
+							loadVirtualTourIframe();
+						}
+						observer.unobserve(entry.target); // Останавливаем наблюдение после загрузки
+						}
+					});
+				});
+			
+				// Наблюдаем за элементами
+				const mapElement = document.getElementById('map');
+				const virtualTourElement = document.querySelector('.virtual-tour-wrapper');
+				
+				if (mapElement) {
+					observer.observe(mapElement);
+				} else {
+					console.error('Element with id "map" not found.');
+				}
+			
+				if (virtualTourElement) {
+					observer.observe(virtualTourElement);
+				} else {
+					console.error('Element with class "virtual-tour-wrapper" not found.');
+				}
+			});
+			
+		</script>
   <!--======  BOTTOM FIXED BUTTONS =======-->
   <div class="fixed-buttons" id="fixed-buttons">
     <a class="btn-accent" href="#!">Задать вопрос</a>
