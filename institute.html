@@ -288,16 +288,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -748,7 +738,7 @@
               </nav>
             </div>
             <div class="dynamic-menu__banner block-1024">
-              <img src="./img/institute/institute-logo.webp" width="295" height="295" alt="logo">
+              <img class="lazy" src="./img/institute/institute-logo.webp" width="295" height="295" alt="logo">
             </div>
           </div>
           <!--======= right column ======-->
@@ -761,22 +751,22 @@
                   <!--====== slider =======-->
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="./img/institute/1-mob.webp" media="(max-width: 767px)">
-                      <img class="lazy" src="./img/institute/1.webp" width="925" height="545" alt="image">
+                      <source srcset="./img/institute/img-w375.webp" media="(max-width: 767px)">
+                      <img class="lazy" src="./img/institute/img.webp" width="925" height="545" alt="image">
                     </picture>
                   </div>
                   <!--======slider =======-->
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="./img/institute/1-mob.webp" media="(max-width: 767px)">
-                      <img class="lazy" src="./img/institute/1.webp" width="925" height="545" alt="image">
+                      <source srcset="./img/institute/img-w375.webp" media="(max-width: 767px)">
+                      <img class="lazy" src="./img/institute/img.webp" width="925" height="545" alt="image">
                     </picture>
                   </div>
                   <!--======slider =======-->
                   <div class="swiper-slide">
                     <picture>
-                      <source srcset="./img/institute/1-mob.webp" media="(max-width: 767px)">
-                      <img class="lazy" src="./img/institute/1.webp" width="925" height="545" alt="image">
+                      <source srcset="./img/institute/img-w375.webp" media="(max-width: 767px)">
+                      <img class="lazy" src="./img/institute/img.webp" width="925" height="545" alt="image">
                     </picture>
                   </div>
                 </div>
@@ -1029,7 +1019,10 @@
                   <a class="btn btn--slim" href="#!">Узнать больше</a>
                 </div>
                 <div class="decore-block__img">
-                  <img src="./img/review/boy.webp" width="290px" alt="img">
+                  <picture>
+                    <source srcset="./img/review/boy@2x.webp" media="(min-resolution: 192dpi)" type="image/webp" width="290">
+                    <img class="lazy" src="./img/review/boy.webp" width="290px" alt="img">
+                  </picture>
                 </div>
               </div>
               <!--===== location====-->
@@ -1097,8 +1090,10 @@
                 <!--=====IMG BLOCK ====-->
                 <div class="feedback-img">
                   <picture>
-                    <source srcset="./img/feedback2-mob.webp" media="(max-width: 767px)">
-                    <img class="lazy" src="./img/feedback2.webp" width="450" alt="image">
+                    <source srcset="./img/feedback2-w375.webp" media="(max-width: 767px)" width="450" height="450" type="image/webp" />
+                    <source srcset="./img/feedback2-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="450" height="450" />
+                    <source srcset="./img/feedback2@2x.webp" media="(min-resolution: 192dpi)" width="328" height="328" type="image/webp" />
+                    <img class="lazy wh-100" src="./img/feedback2.webp" width="328" height="328" alt="image" />
                   </picture>
                 </div>
                 <div class="feedback-form-wrapper">
@@ -1163,16 +1158,16 @@
                   <!--=======логотипы =====-->
                   <div class="accreditation-short accreditation-short--mini flex-center-y">
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo1.webp" width="138" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo1.webp" width="138" height="60" alt="img">
                     </div>
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo2.webp" width="116" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo2.webp" width="116" height="60" alt="img">
                     </div>
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo3.webp" width="60" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo3.webp" width="60" height="60" alt="img">
                     </div>
                     <div class="accredit-logo">
-                      <img src="./img/accredit/logo4.webp" width="138" height="60" alt="img">
+                      <img class="lazy" src="./img/accredit/logo4.webp" width="138" height="60" alt="img">
                     </div>
                   </div>
                   <!--====== кнопка ====-->
@@ -1406,7 +1401,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1693,7 +1691,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1980,7 +1981,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2267,7 +2271,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2554,7 +2561,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2841,7 +2851,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3022,7 +3035,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3203,7 +3219,10 @@
                 <div class="scool-card scool-card--vertical">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/undefined@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/undefined.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -3577,7 +3596,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -3585,7 +3604,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

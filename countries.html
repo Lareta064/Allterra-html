@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
   <!--========= custom styles ========-->
   <link rel="stylesheet" href="./css/main.css">
-  <title>Страны</title>
+  <title></title>
   <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
   <style>
     @font-face {
@@ -44,6 +44,16 @@
       font-weight: 700;
       font-style: normal;
       font-display: swap;
+    }
+
+    .hero {
+      background-image: url('./img/about/header-bg.webp');
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        background-image: url('./img/about/header-bg-mob.webp');
+      }
     }
   </style>
 </head>
@@ -288,16 +298,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -706,7 +706,7 @@
   </header>
   <!--=============MAIN===========-->
   <main class="inner-page">
-    <section class="hero" style="background-image:url(./img/about/header-bg.webp);">
+    <section class="hero">
       <div class="container">
         <div class="hero-content">
           <ul class="breadcrumb">
@@ -746,7 +746,7 @@
           <!--=====left columns=====-->
           <div class="country-desk">
             <div class="country-desk__header flex-center-y">
-              <img src="./img/countries/1.webp" width="212" height="212" alt="alt">
+              <img class="lazy" src="./img/countries/1.webp" width="212" height="212" alt="alt">
               <div class="country-desk__txt">
                 <div class="h3">Англоговорящие страны</div>
                 <p class="txt-16">2683 успешных поступления</p>
@@ -824,7 +824,7 @@
           <!--=====left columns=====-->
           <div class="country-desk">
             <div class="country-desk__header flex-center-y">
-              <img src="./img/countries/2.webp" width="212" height="212" alt="alt">
+              <img class="lazy" src="./img/countries/2.webp" width="212" height="212" alt="alt">
               <div class="country-desk__txt">
                 <div class="h3">Европа</div>
                 <p class="txt-16">734 успешных поступления</p>
@@ -1010,7 +1010,7 @@
           <!--=====left columns=====-->
           <div class="country-desk">
             <div class="country-desk__header flex-center-y">
-              <img src="./img/countries/3.webp" width="212" height="212" alt="alt">
+              <img class="lazy" src="./img/countries/3.webp" width="212" height="212" alt="alt">
               <div class="country-desk__txt">
                 <div class="h3">Азия</div>
                 <p class="txt-16">307 успешных поступления</p>
@@ -1111,7 +1111,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Работаем
-              <br>c
+              <br> c
             </span>
             <p>2008</p>
             <span>года</span>
@@ -1119,7 +1119,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Успешно зачислили
-              <br>более
+              <br> более
             </span>
             <p>1200</p>
             <span>студентов</span>
@@ -1127,7 +1127,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Довольных клиентов
-              <br>более
+              <br> более
             </span>
             <div class="flex-row">
               <p>99&nbsp;%</p>
@@ -1136,7 +1136,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Нам доверяют
-              <br>более
+              <br> более
             </span>
             <p>100</p>
             <span>студентов ежегодно</span>
@@ -1161,7 +1161,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo1.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo1.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1171,7 +1171,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo2.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo2.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1183,7 +1183,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo3.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo3.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1193,7 +1193,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo4.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo4.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1257,7 +1257,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -1265,7 +1265,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

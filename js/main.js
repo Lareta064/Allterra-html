@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function (){
 		});
 	}
 	/*========Partners'Zone  VIDEO============ */
-	const videoBlock = document.querySelector('.video');
+	const videoBlock = document.querySelector('.video-local');
 	if(videoBlock){
 		const videoBlockContent = videoBlock.querySelector('video');
 		videoBlock.addEventListener('click', ()=>{
@@ -283,6 +283,36 @@ document.addEventListener("DOMContentLoaded", function (){
         },
       },
     });
+	var reviewSliderArticle = new Swiper(".article-review-slider", {
+	   slidesPerView: 1.07,
+	   loop: true,
+	   speed: 1000,
+	    spaceBetween: 10,
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+	  breakpoints: {
+        640: {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 1.4,
+          spaceBetween: 16,
+        },
+		1024: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+		
+	   1280: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+      },
+    });
+	
 	/*=================BLOG CARDS SLIDER ================== */
     var blogCardsSlider = new Swiper(".blog-cards-slider", {
 	   slidesPerView: 1.15,
@@ -327,7 +357,19 @@ document.addEventListener("DOMContentLoaded", function (){
 			clickable: true,
       	},
     });
-
+   /******************* */
+   var articlePageSlider = new Swiper('.article-swiper', {
+	speed: 1000,
+	effect:'fade',
+	loop: true,
+	 pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	 autoplay: {
+		delay: 3000,
+	},
+   })
 	/* подсветка активного меню при скролле Article Page */
 	const backlitMenu = document.querySelector('.backlit-menu');
 	if(backlitMenu){
@@ -683,6 +725,7 @@ document.addEventListener("DOMContentLoaded", function (){
 		});
 	}
   	toggleActiveClass('cell-price', 'pay-cur');
+	toggleActiveClass('tab-toggles', 'tab-toggle');
 	 /* стр учебные заведения переключение карточек */
 	 const cardsWrapper = document.getElementById('scool-cards-grid');
 	 
@@ -764,5 +807,74 @@ document.addEventListener("DOMContentLoaded", function (){
 			removeActiveClasses();
 		});
 	}
-	
+	/*********btn-more click**************** */
+	const hideElemetsParent = document.querySelectorAll('.has-hide');
+	if( hideElemetsParent.length > 0){
+		for(let item of hideElemetsParent){
+			const showMoreBtn = item.querySelector('.btn-more');
+			showMoreBtn.addEventListener('click', ()=>{
+				const hideItems = item.querySelectorAll('.hide-item');
+				hideItems.forEach((el)=>{
+					el.classList.remove('hide-item');
+				});
+				showMoreBtn.classList.add('hide-btn');
+			});
+			
+		}
+	}
+	/*========CUSTOM SELECT======= */
+ 	const customSelects = document.querySelectorAll('.custom-select');
+
+    customSelects.forEach((customSelect) => {
+        const selectTrigger = customSelect.querySelector('.custom-select-trigger');
+        const optionsContainer = customSelect.querySelector('.custom-options');
+        const optionsList = customSelect.querySelectorAll('.custom-option');
+
+        // Toggle options dropdown
+        selectTrigger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Останавливаем распространение события
+            const isOpen = customSelect.classList.contains('open');
+            closeAllSelects();
+            if (!isOpen) {
+                customSelect.classList.add('open');
+                optionsContainer.style.maxHeight = optionsContainer.scrollHeight + 'px';
+            } else {
+                optionsContainer.style.maxHeight = '0';
+            }
+        });
+
+        // Update selected option
+        optionsList.forEach((option) => {
+            option.addEventListener('click', function() {
+                selectTrigger.textContent = option.textContent;
+                selectTrigger.dataset.value = option.dataset.value;
+                customSelect.classList.remove('open');
+                optionsContainer.style.maxHeight = '0';
+            });
+        });
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener('click', function() {
+        closeAllSelects();
+    });
+
+    function closeAllSelects() {
+        customSelects.forEach((select) => {
+            select.classList.remove('open');
+            const optionsContainer = select.querySelector('.custom-options');
+            if (optionsContainer) {
+                optionsContainer.style.maxHeight = '0';
+            }
+        });
+    }
+  //====== для формы, как на странице Статьи====	
+  const hideParentBtn = document.querySelectorAll('.hide-parent-btn');
+  if(hideParentBtn.length > 0){
+	for(let item of hideParentBtn){
+		item.addEventListener('click', ()=>{
+			item.closest('.hide-parent').style.display="none";
+		});
+	}
+  }
 });

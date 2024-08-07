@@ -45,6 +45,16 @@
       font-style: normal;
       font-display: swap;
     }
+
+    .hero {
+      background-image: url('./img/about/header-bg.webp');
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        background-image: url('./img/about/header-bg-mob.webp');
+      }
+    }
   </style>
 </head>
 
@@ -288,16 +298,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -706,7 +706,7 @@
   </header>
   <!--=============MAIN===========-->
   <main class="inner-page">
-    <section class="hero" style="background-image:url(./img/about/header-bg.webp);">
+    <section class="hero">
       <div class="container">
         <div class="hero-content">
           <ul class="breadcrumb">
@@ -741,7 +741,7 @@
           <p>We are glad that you are considering working with us.</p>
           <p>Allterra Education is a leading education abroad consultancy based in Russia. Launched by industry professionals in 2013, we’ve grown to become the company with an acquired distinctiveness.</p>
           <p>Please learn more about our team, services and possible cooperation options.</p>
-          <div class="video">
+          <div class="video video-local">
             <video playsinline>
               <source src="./video/Partner_s_zone.mp4" type="video/mp4">
             </video>
@@ -845,6 +845,16 @@
             <li>We respect rules and ethical norms</li>
             <li>We love what we do, and our clients and partners benefit from it.</li>
           </ul>
+          <!--====== inner-menu ====-->
+          <div class="inner-menu color-block">
+            <h3>Также в разделе «О компании»:</h3>
+            <a class="active" href="#!">Об Allterra Education</a>
+            <a href="#!">Все услуги</a>
+            <a href="#!">Сотрудничество</a>
+            <a href="#!">Вакансии</a>
+            <a href="#!">Контакт</a>
+            <a href="#!">Partner's zone</a>
+          </div>
         </div>
       </div>
     </section>
@@ -856,7 +866,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Работаем
-              <br>c
+              <br> c
             </span>
             <p>2008</p>
             <span>года</span>
@@ -864,7 +874,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Успешно зачислили
-              <br>более
+              <br> более
             </span>
             <p>1200</p>
             <span>студентов</span>
@@ -872,7 +882,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Довольных клиентов
-              <br>более
+              <br> более
             </span>
             <div class="flex-row">
               <p>99&nbsp;%</p>
@@ -881,7 +891,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Нам доверяют
-              <br>более
+              <br> более
             </span>
             <p>100</p>
             <span>студентов ежегодно</span>
@@ -906,7 +916,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo1.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo1.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -916,7 +926,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo2.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo2.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -928,7 +938,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo3.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo3.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -938,7 +948,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo4.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo4.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1002,7 +1012,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -1010,7 +1020,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

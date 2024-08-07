@@ -45,6 +45,16 @@
       font-style: normal;
       font-display: swap;
     }
+
+    .hero {
+      background-image: url('./img/about/header-bg.webp');
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        background-image: url('./img/about/header-bg-mob.webp');
+      }
+    }
   </style>
 </head>
 
@@ -288,16 +298,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -706,7 +706,7 @@
   </header>
   <!--=============MAIN===========-->
   <main class="main">
-    <section class="hero" style="background-image:url(./img/about/header-bg.webp);">
+    <section class="hero">
       <div class="container">
         <div class="hero-content">
           <ul class="breadcrumb">
@@ -741,6 +741,16 @@
           <p>Allterra Education оказывает своим клиентам профессиональные услуги в сфере международного образования.</p>
           <p>Мы специализируемся на среднем и высшем образовании за рубежом, помогаем подготовиться к поступлению в школы и вузы, а также тем, кто планирует посвятить свою жизнь искусству или дизайну.</p>
           <p>Подробнее о том, как мы это делаем, можно прочитать на соответствующих страницах:</p>
+          <!--====== inner-menu ====-->
+          <div class="inner-menu color-block">
+            <h3>Также в разделе «О компании»:</h3>
+            <a class="active" href="#!">Об Allterra Education</a>
+            <a href="#!">Все услуги</a>
+            <a href="#!">Сотрудничество</a>
+            <a href="#!">Вакансии</a>
+            <a href="#!">Контакт</a>
+            <a href="#!">Partner's zone</a>
+          </div>
         </div>
       </div>
     </section>
@@ -750,7 +760,12 @@
         <div class="feedback-content two-columns">
           <!--=====IMG BLOCK ====-->
           <div class="feedback-img">
-            <img class="wh-100 lazy" src="./img/feedback.webp" alt="alt">
+            <picture>
+              <source srcset="./img/feedback-w375.webp" media="(max-width: 767px)" width="590" height="575" type="image/webp" />
+              <source srcset="./img/feedback-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="590" height="575" />
+              <source srcset="./img/feedback@2x.webp" media="(min-resolution: 192dpi)" width="720" height="720" type="image/webp" />
+              <img class="lazy wh-100" src="./img/feedback.webp" width="720" height="720" alt="image" />
+            </picture>
           </div>
           <!--===== FORM BLOCK ====-->
           <div class="feedback-form-wrapper" id="feedback">
@@ -795,7 +810,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Работаем
-              <br>c
+              <br> c
             </span>
             <p>2008</p>
             <span>года</span>
@@ -803,7 +818,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Успешно зачислили
-              <br>более
+              <br> более
             </span>
             <p>1200</p>
             <span>студентов</span>
@@ -811,7 +826,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Довольных клиентов
-              <br>более
+              <br> более
             </span>
             <div class="flex-row">
               <p>99&nbsp;%</p>
@@ -820,7 +835,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Нам доверяют
-              <br>более
+              <br> более
             </span>
             <p>100</p>
             <span>студентов ежегодно</span>
@@ -845,7 +860,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo1.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo1.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -855,7 +870,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo2.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo2.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -867,7 +882,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo3.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo3.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -877,7 +892,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo4.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo4.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -972,7 +987,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -980,7 +995,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

@@ -45,6 +45,16 @@
       font-style: normal;
       font-display: swap;
     }
+
+    .hero {
+      background-image: url('./img/search-page-header.webp');
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        background-image: url('./img/search-mob.webp');
+      }
+    }
   </style>
 </head>
 
@@ -288,16 +298,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -706,7 +706,7 @@
   </header>
   <!--=============MAIN===========-->
   <main class="inner-page search-page">
-    <section class="hero" style="background-image:url('./img/search-page-header.webp')">
+    <section class="hero">
       <div class="container">
         <div class="hero-content">
           <ul class="breadcrumb">
@@ -917,7 +917,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -925,7 +925,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

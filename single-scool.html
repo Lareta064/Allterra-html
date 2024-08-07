@@ -45,6 +45,16 @@
       font-style: normal;
       font-display: swap;
     }
+
+    .hero {
+      background-image: url('./img/scools/header-bg.webp');
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        background-image: url('./img/scools/header-bg-mob.webp');
+      }
+    }
   </style>
 </head>
 
@@ -288,16 +298,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -706,7 +706,7 @@
   </header>
   <!--=============MAIN===========-->
   <main class="inner-page inner-page--scool">
-    <section class="hero" style="background-image:url('./img/scools/header-bg.webp')">
+    <section class="hero hero--banner">
       <div class="container">
         <div class="hero-content">
           <ul class="breadcrumb">
@@ -721,37 +721,31 @@
           <div class="hero-title hero-title--rel">
             <h1 class="title">Поступление в среднюю школу за рубежом</h1>
             <p class="header-subtitle">Индивидуально подбираем зарубежную школу под задачи семьи и потребности ребёнка, помогаем подготовиться к поступлению и сопровождаем во время обучения за границей</p>
-            <a class="btn-accent" href="#!">Получить консультацию</a>
           </div>
           <!--===== bottom text =====-->
           <div class="hero-bottom">
             <ul class="stripes-list">
               <li>
-                <span class="check-icon">
-                  <svg class="svg-check">
-                    <use href="./img/spriteSvg.svg#svg-check"></use>
-                  </svg>
-                </span>
+                <svg class="svg-fleur">
+                  <use href="./img/spriteSvg.svg#svg-fleur"></use>
+                </svg>
                 <span>Сильнейшие технические вузы мира</span>
               </li>
               <li>
-                <span class="check-icon">
-                  <svg class="svg-check">
-                    <use href="./img/spriteSvg.svg#svg-check"></use>
-                  </svg>
-                </span>
-                <span>Медицинские факультеты</span>
+                <svg class="svg-med">
+                  <use href="./img/spriteSvg.svg#svg-med"></use>
+                </svg>
+                <span>Медицинские факультеты </span>
               </li>
               <li>
-                <span class="check-icon">
-                  <svg class="svg-check">
-                    <use href="./img/spriteSvg.svg#svg-check"></use>
-                  </svg>
-                </span>
+                <svg class="svg-art">
+                  <use href="./img/spriteSvg.svg#svg-art"></use>
+                </svg>
                 <span>Университеты искусств</span>
               </li>
             </ul>
           </div>
+          <a class="btn-accent w-auto" href="#!">Получить консультацию</a>
         </div>
       </div>
     </section>
@@ -767,7 +761,7 @@
             <p>После прохождения этих этапов можно приступить к подбору школы. Этап включает формирование первичного списка школ, анализ результатов учеников, проверку вступительных требований и коммуникацию с представителями иностранных школ.</p>
           </div>
           <div class="scool-content__img">
-            <img src="./img/scool.webp" alt="img" width="610">
+            <img class="lazy" src="./img/scool.webp" alt="img" width="610">
           </div>
         </div>
       </div>
@@ -845,7 +839,7 @@
           <h2 class="section-title">Зачисление в среднюю школу за рубежом - работа со специалистом и без</h2>
           <p class="header-subtitle">Решив поступать в школу за границей, семья оказывается перед вопросом: как сделать это правильно?
             <br>Те, кто хочет воспользоваться профессиональной помощью, ищут надежную образовательную компанию.
-            <br>Другие родители принимают решение действовать самостоятельно. Сравнение этих двух вариантов мы приводим ниже. Возможно, оно обратит ваше внимание на неочевидные моменты
+            <br> Другие родители принимают решение действовать самостоятельно. Сравнение этих двух вариантов мы приводим ниже. Возможно, оно обратит ваше внимание на неочевидные моменты
           </p>
         </div>
         <!--============TABLE FOR >= 1024px ==============-->
@@ -959,7 +953,12 @@
         <div class="feedback-content two-columns">
           <!--=====IMG BLOCK ====-->
           <div class="feedback-img">
-            <img class="wh-100 lazy" src="./img/feedback.webp" alt="alt" />
+            <picture>
+              <source srcset="./img/feedback-w375.webp" media="(max-width: 767px)" width="590" height="575" type="image/webp" />
+              <source srcset="./img/feedback-w375@2x.webp" media="(max-width: 767px) and (min-resolution: 192dpi)" type="image/webp" width="590" height="575" />
+              <source srcset="./img/feedback@2x.webp" media="(min-resolution: 192dpi)" width="720" height="720" type="image/webp" />
+              <img class="lazy wh-100" src="./img/feedback.webp" width="720" height="720" alt="image" />
+            </picture>
           </div>
           <!--===== FORM BLOCK ====-->
           <div class="feedback-form-wrapper" id="feedback">
@@ -1263,7 +1262,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Работаем
-              <br>c
+              <br> c
             </span>
             <p>2008</p>
             <span>года</span>
@@ -1271,7 +1270,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Успешно зачислили
-              <br>более
+              <br> более
             </span>
             <p>1200</p>
             <span>студентов</span>
@@ -1279,7 +1278,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Довольных клиентов
-              <br>более
+              <br> более
             </span>
             <div class="flex-row">
               <p>99&nbsp;%</p>
@@ -1288,7 +1287,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Нам доверяют
-              <br>более
+              <br> более
             </span>
             <p>100</p>
             <span>студентов ежегодно</span>
@@ -1647,7 +1646,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -1655,7 +1654,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

@@ -8,12 +8,18 @@
   <!--=======убрать перевод цифр в номер телефона на ios  и safari ======-->
   <meta name="format-detection" content="telephone=no">
   <!--========= swiper slider ==============-->
-  <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
-  <!--========= custom styles ========-->
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Обращение Директора</title>
+  
+  <title>404</title>
   <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
   <style>
+    @font-face {
+      font-family: 'IngridDarling';
+      src: url(./fonts/IngridDarling-Regular.woff2) format("woff2");
+      unicode-range: U+30-39;
+      font-style: normal;
+      font-display: swap;
+    }
+
     @font-face {
       font-family: 'Inter';
       src: url(./fonts/Inter-Regular.woff2) format("woff2");
@@ -45,17 +51,8 @@
       font-style: normal;
       font-display: swap;
     }
-
-    .hero {
-      background-image: url('./img/greeting/header-bg.webp');
-    }
-
-    @media (max-width: 767px) {
-      .hero {
-        background-image: url('./img/greeting/header-bg-mob.webp');
-      }
-    }
   </style>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -706,375 +703,33 @@
   </header>
   <!--=============MAIN===========-->
   <main class="inner-page">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <ul class="breadcrumb">
-            <li>
-              <a href="#!">Главная</a>
-            </li>
-            <li>
-              <a href="#!">Обращение директора</a>
-            </li>
-          </ul>
-          <div class="hero-title">
-            <h1 class="title">Обращение директора</h1>
-          </div>
-          <!--===== bottom text =====-->
-          <div class="hero-bottom">
-            <a class="back-link" href="#!">
-              <svg class="svg-chevron">
-                <use href="./img/spriteSvg.svg#svg-chevron"></use>
-              </svg>
-              <span>Назад</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="greeting">
-      <div class="container">
-        <div class="aside-grid">
-          <!--=====left column ====-->
-          <div class="aside-grid__col">
-            <div class="person short-card">
-              <!--====== top row =====-->
-              <div class="person__info">
-                <div class="person__photo">
-                  <img class="wh-100 lazy" src="./img/boss/boss1.webp" width="295" alt="img" />
-                </div>
-                <div class="person__details">
-                  <div class="flex-center-y">
-                    <div class="person__name">Гречко Владимир Ильич</div>
-                  </div>
-                  <div class="person__range">
-                    <p>Генеральный директор</p>
-                    <p>Опыт работы 27 лет</p>
-                  </div>
-                  <div class="person__links">
-                    <a class="accent-link" href="#!">grechko@allterra.ru</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--==== right column ====-->
-          <div class="aside-grid__content txt-body">
-            <div class="h4">
-              <strong>Уважаемые господа!</strong> Здесь я хочу рассказать Вам о том, что мы думаем о своей работе и о том, как мы относимся к своим клиентам.
-            </div>
-            <p>
-              <strong>От чего зависит судьба человека?</strong> От череды случайностей и стечения обстоятельств? Или от того, нашел ли он себя в этой жизни? Научится ли человек делать выбор, бороться с трудностями, принимать правильные решения?
-            </p>
-            <p>Ответы на эти вопросы во многом зависят от родителей – людей, которые всегда рядом, которые любят и заботятся. Но даже родители не всесильны. Невозможно все знать и уметь. И ключевым моментом в такой ситуации становится выбор конкретных специалистов для ребенка: докторов, учителей, тренеров и… консультантов по обучению за рубежом.</p>
-            <p>Мы прекрасно понимаем Вас потому, что сами родители. Так же, как и Вы, мы искали школы и спортивные секции, так же учили своих детей за границей.</p>
-            <p>Компания «Альтера Эдьюкейшн» - <strong>это люди, объединенные общим мировоззрением</strong>. У нас нет случайных людей или тех, кто «ходит на работу». Мы не нанимаем на работу «персонал». У нас работают люди, которые относятся к Вашей проблеме как к своей.</p>
-            <!--======== blockquote =======-->
-            <blockquote cite="">
-              <p>Имея многолетний опыт работы в сфере образования за рубежом и высокую квалификацию&nbsp;каждого сотрудника, мы гарантируем Вам доступ ко всем возможным вариантам обучения, содействие при поступлении и курирование в течение всего процесса обучения.</p>
-            </blockquote>
-            <p>Мы понимаем, для кого мы работаем. Люди, стремящиеся получить лучшее образование для себя или своих детей, постоянно в движении – каждый день меняют себя и окружающий их мир к лучшему.</p>
-            <p>И очень важно, чтобы идущие рядом были единомышленниками, а не обузой. Не отнимали время и силы, а помогали и поддерживали. Поэтому, прежде всего, мы стремимся понять, кто является нашим клиентом. Что им движет, и к чему он стремится. Весь наш опыт и <strong>наши знания будут в Вашем распоряжении</strong>.</p>
-            <p>В зависимости от того, на каком этапе образования Вы находитесь, мы вместе с Вами выберем программу обучения или разработаем образовательную траекторию, которая наилучшим образом обеспечит достижение поставленных целей с минимально возможными ограничениями.</p>
-            <p>Все остальное – технические моменты. Куда и когда отправиться учиться, мы с Вами определим в процессе сотрудничества.</p>
-            <p>Именно сотрудничества! Получение образования – длительный, сложный и трудоемкий процесс. И все это время <strong>мы будем рядом</strong>. Вместе с Вами будем следить за результатами учебы, обеспечивая необходимый уровень поддержки, как в учебе, так и в быту</p>
-            <!--======== blockquote =======-->
-            <blockquote cite="">
-              <p>Наша конечная цель – получение нашими клиентами такого уровня образования, который позволит им заниматься любимым делом, легко получить желаемую работу или добиться успехов в бизнесе, обеспечит широту выбора и высокий уровень жизни</p>
-            </blockquote>
-            <!--====== inner-menu ====-->
-            <div class="inner-menu color-block">
-              <h3>Также в разделе «О компании»:</h3>
-              <a class="active" href="#!">Об Allterra Education</a>
-              <a href="#!">Все услуги</a>
-              <a href="#!">Сотрудничество</a>
-              <a href="#!">Вакансии</a>
-              <a href="#!">Контакт</a>
-              <a href="#!">Partner's zone</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--========REVIEW SWIPER =======-->
-    <section class="review-section dark-bg">
-      <div class="container">
-        <h2 class="h2">Отзывы</h2>
-        <div class="slider-wrapper">
-          <!--======== slider-content =======-->
-          <div class="review-slider swiper">
-            <div class="swiper-wrapper">
-              <!--===== single slide ========-->
-              <div class="swiper-slide">
-                <div class="review-card">
-                  <div class="person">
-                    <!--====== top row =====-->
-                    <div class="person__info">
-                      <div class="person__photo">
-                        <img class="wh-100 lazy" src="./img/review/author1.webp" width="295" alt="img" />
-                      </div>
-                      <div class="person__details">
-                        <div class="flex-center-y">
-                          <div class="person__name">Александр Ференц</div>
-                          <div class="person__date">02.02.2024</div>
-                        </div>
-                        <div class="person__range">
-                          <p>Генеральный директор ГК «АК-Сервис»</p>
-                        </div>
-                        <div class="person__links">
-                          <a class="pin-item" href="#!">США</a>
-                          <a class="accent-link" href="#!">Ringling College of Art</a>
-                        </div>
-                        <!--====== теги для десктоп версии ======-->
-                        <div class="tags-list">
-                          <a href="#!">#среднее_образование</a>
-                          <a href="#!">#родитель</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--====== text row =====-->
-                    <div class="person__txt">
-                      <!--====== теги для моб версии ======-->
-                      <div class="tags-list">
-                        <a href="#!">#среднее_образование</a>
-                        <a href="#!">#родитель</a>
-                      </div>
-                      <p>Я работаю с командой Allterra Education на протяжении 6 лет. За это время я успел сам побывать студентом и поучить английский в Санта-Барбаре. Обе мои дочери были рады попасть в универс</p>
-                      <div class="person__meta">
-                        <a class="accent-link und-line" href="#!">Читать далее</a>
-                        <div class="person__date">02.02.2024</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--=====single slide ========-->
-              <div class="swiper-slide">
-                <div class="review-card">
-                  <div class="person">
-                    <!--====== top row =====-->
-                    <div class="person__info">
-                      <div class="person__photo">
-                        <img class="wh-100 lazy" src="./img/review/author2.webp" width="295" alt="img" />
-                      </div>
-                      <div class="person__details">
-                        <div class="flex-center-y">
-                          <div class="person__name">София</div>
-                          <div class="person__date">02.02.2024</div>
-                        </div>
-                        <div class="person__links">
-                          <a class="pin-item" href="#!">Великобритания</a>
-                          <a class="accent-link" href="#!">Sidcot School</a>
-                        </div>
-                        <!--====== теги для десктоп версии ======-->
-                        <div class="tags-list">
-                          <a href="#!">#среднее_образование</a>
-                          <a href="#!">#студент</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--====== text row =====-->
-                    <div class="person__txt">
-                      <!--====== теги для моб версии ======-->
-                      <div class="tags-list">
-                        <a href="#!">#среднее_образование</a>
-                        <a href="#!">#студент</a>
-                      </div>
-                      <p>Я могу рекомендовать компанию Allterra Education всем, кто планирует отправлять ребенка в Великобританию.</p>
-                      <div class="person__meta">
-                        <div class="person__date">02.02.2024</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--===== single slide ========-->
-              <div class="swiper-slide">
-                <div class="review-card">
-                  <div class="person">
-                    <!--====== top row =====-->
-                    <div class="person__info">
-                      <div class="person__photo">
-                        <img class="wh-100 lazy" src="./img/review/author3.webp" width="295" alt="img" />
-                      </div>
-                      <div class="person__details">
-                        <div class="flex-center-y">
-                          <div class="person__name">Захар Богданов</div>
-                          <div class="person__date">02.02.2024</div>
-                        </div>
-                        <div class="person__links">
-                          <a class="pin-item" href="#!">Австралия</a>
-                          <a class="accent-link" href="#!">Queen Ethelburga's Collegiate</a>
-                        </div>
-                        <!--====== теги для десктоп версии ======-->
-                        <div class="tags-list">
-                          <a href="#!">#среднее_образование</a>
-                          <a href="#!">#студент</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--====== text row =====-->
-                    <div class="person__txt">
-                      <!--====== теги для моб версии ======-->
-                      <div class="tags-list">
-                        <a href="#!">#среднее_образование</a>
-                        <a href="#!">#студент</a>
-                      </div>
-                      <p>Два года в школе пролетели незаметно, я завел очень много друзей и смог значительно улучшить свой английский.</p>
-                      <div class="person__meta">
-                        <div class="person__date">02.02.2024</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--=====single slide ========-->
-              <div class="swiper-slide">
-                <div class="review-card">
-                  <div class="person">
-                    <!--====== top row =====-->
-                    <div class="person__info">
-                      <div class="person__photo">
-                        <img class="wh-100 lazy" src="./img/review/author4.webp" width="295" alt="img" />
-                      </div>
-                      <div class="person__details">
-                        <div class="flex-center-y">
-                          <div class="person__name">Иван Рябинин</div>
-                          <div class="person__date">02.02.2024</div>
-                        </div>
-                        <div class="person__links">
-                          <a class="pin-item" href="#!">Германия</a>
-                          <a class="accent-link" href="#!">Giggleswick School</a>
-                        </div>
-                        <!--====== теги для десктоп версии ======-->
-                        <div class="tags-list">
-                          <a href="#!">#среднее_образование</a>
-                          <a href="#!">#родитель</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!--====== text row =====-->
-                    <div class="person__txt">
-                      <!--====== теги для моб версии ======-->
-                      <div class="tags-list">
-                        <a href="#!">#среднее_образование</a>
-                        <a href="#!">#родитель</a>
-                      </div>
-                      <p>Все критерии, по которым мы выбирали школу, совпали.</p>
-                      <div class="person__meta">
-                        <div class="person__date">02.02.2024</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--===== swiper navigation========-->
-          <div class="slider-nav">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-        </div>
-        <!--========= section button =========-->
-        <div class="review-btn flex-center mt-48">
-          <a class="btn-br" href="#!">Смотреть все отзывы</a>
-        </div>
-      </div>
-    </section>
-    <!--========== ACCREDITATION ============-->
-    <section class="accreditation">
-      <div class="container">
-        <div class="accreditation-content flex-justify">
-          <!--======== LEFT COLUMN =====-->
-          <div class="accreditation__title flex-col">
-            <h2 class="h2">Аккредитации нашей компании</h2>
-            <!--===== rabbit image=====-->
-            <div class="accreditation__img">
-              <img class="lazy" src="./img/rabbit.webp" width="221" height="303" alt="img">
-            </div>
-          </div>
-          <!--======== RIGHT COLUMN =====-->
-          <div class="accreditation-cards">
-            <div class="flex-row">
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img class="lazy" src="./img/accredit/logo1.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> входит в список агентств, рекомендованных Британским Советом для профессиональной консультации по учебе в Великобритании
-                  </p>
-                </div>
-              </div>
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img class="lazy" src="./img/accredit/logo2.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> является официальным представителем более 300 ведущих частных школ Великобритании в рамках ассоциации British Boarding Schools Network
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="flex-row">
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img class="lazy" src="./img/accredit/logo3.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> – член организации ICEF; наши специалисты прошли профессиональную подготовку и получили международный статус ICEF Trained Advisors
-                  </p>
-                </div>
-              </div>
-              <div class="accredit-card">
-                <div class="accredit-logo">
-                  <img class="lazy" src="./img/accredit/logo4.webp" height="80" alt="logo" />
-                </div>
-                <div class="accredit__text">
-                  <p>
-                    <strong>Allterra Education </strong> успешно сотрудничает с международной ассоциацией Quality Education, в которую входят лучшие языковые школы и колледжи планеты
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--============ CONTACTS ================-->
-    <section class="contacts dark-bg">
-      <div class="container">
-        <form class="contacts-form dark-opacity">
-          <p class="h3">Задать вопрос</p>
+    <div class="container">
+      <div class="error404-content">
+        <div class="error404-numbers">4 <span class="accent-txt">0</span> 4</div>
+        <div class="txt-20">К сожалению, запрашиваемой страницы на сайте нет</div>
+        <form class="simple-search">
           <div class="form_field">
-            <input type="text" name="name" placeholder="Ваше имя*">
-          </div>
-          <div class="form_field">
-            <input type="text" name="phone" placeholder="Ваш телефон*">
-          </div>
-          <div class="form_field">
-            <input type="text" name="email" placeholder="Ваш email">
-          </div>
-          <!--====== эелемент .message-field  имеет высоту в зависимости от количества  напечатанного в него текста. То есть высота меняется динамично =======-->
-          <div class="form_field">
-            <p class="message-field" contenteditable="true" placeholder="Ваш вопрос"></p>
-          </div>
-          <div class="form-confirm">
-            <label class="form-checkbox">
-              <input type="checkbox" name="name_chk">
-              <span class="fake-checkbox"></span>
-              <span class="form-confirm__text">Ознакомился с <a class="white-link" href="#!">политикой конфидециальности</a> и даю своё согласие на обработку персональных данных</span>
-            </label>
-          </div>
-          <div class="form__btn">
-            <button class="btn-white w-100" type="submit">Получить консультацию</button>
+            <label class="txt-14"> Попробуйте воспользоваться поиском:</label>
+            <input type="text" name="search-input">
+            <!--======FORM BUTTON=====-->
+            <div class="form__btn">
+              <button class="btn-icon" type="submit">
+                <svg class="svg-search">
+                  <use href="./img/spriteSvg.svg#svg-search"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </form>
+        <div class="error404-links">
+          <div class="txt-14">или перейти на страницы:</div>
+          <div class="flex-center">
+            <a class="accent-link und-line" href="#!">Главная страница</a>
+            <a class="accent-link und-line" href="#!">Каталог учебных заведений</a>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
   <!--=============FOOTER============-->
   <footer class="footer light-bg">

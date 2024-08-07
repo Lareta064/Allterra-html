@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./libs/swiper/swiper.min.css">
   <!--========= custom styles ========-->
   <link rel="stylesheet" href="./css/main.css">
-  <title>Главная</title>
+  <title>О нас</title>
   <!--======= подключаем шрифты в head для ускорения загрузки страницы ==-->
   <style>
     @font-face {
@@ -44,6 +44,16 @@
       font-weight: 700;
       font-style: normal;
       font-display: swap;
+    }
+
+    .hero {
+      background-image: url('./img/about/header-bg.webp');
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        background-image: url('./img/about/header-bg-mob.webp');
+      }
     }
   </style>
 </head>
@@ -288,16 +298,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -706,7 +706,7 @@
   </header>
   <!--=============MAIN===========-->
   <main class="inner-page">
-    <section class="hero" style="background-image:url(./img/about/header-bg.webp);">
+    <section class="hero">
       <div class="container">
         <div class="hero-content">
           <ul class="breadcrumb">
@@ -736,7 +736,7 @@
     <section class="why-us">
       <div class="container">
         <h2 class="section-title">Почему клиенты доверяют
-          <br>Allterra Education
+          <br> Allterra Education
         </h2>
         <div class="why-us__subtitle">
           <p class="h4">Allterra Education – это образовательный консалтинг высокого уровня</p>
@@ -849,7 +849,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Работаем
-              <br>c
+              <br> c
             </span>
             <p>2008</p>
             <span>года</span>
@@ -857,7 +857,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Успешно зачислили
-              <br>более
+              <br> более
             </span>
             <p>1200</p>
             <span>студентов</span>
@@ -865,7 +865,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Довольных клиентов
-              <br>более
+              <br> более
             </span>
             <div class="flex-row">
               <p>99&nbsp;%</p>
@@ -874,7 +874,7 @@
           <!--====single item =======-->
           <div class="statistics-item">
             <span>Нам доверяют
-              <br>более
+              <br> более
             </span>
             <p>100</p>
             <span>студентов ежегодно</span>
@@ -922,7 +922,7 @@
             </div>
             <div class="serv-card__text">
               <a class="txt-20" href="#!">Среднее образование</a>
-              <p>Построение образовательного маршрута, выбор школы, подготовка, поступление и курирование в процессе учебы</p>
+              <p> Построение образовательного маршрута, выбор школы, подготовка, поступление и курирование в процессе учебы</p>
               <a class="round-arrow" href="#!">
                 <svg class="svg-arrow">
                   <use href="./img/spriteSvg.svg#svg-arrow"></use>
@@ -936,7 +936,7 @@
             </div>
             <div class="serv-card__text">
               <a class="txt-20" href="#!">высшее образование</a>
-              <p>Выбор специальности и вуза, подготовка документов, поступление и получение студенческой визы</p>
+              <p> Выбор специальности и вуза, подготовка документов, поступление и получение студенческой визы</p>
               <a class="round-arrow" href="#!">
                 <svg class="svg-arrow">
                   <use href="./img/spriteSvg.svg#svg-arrow"></use>
@@ -950,7 +950,7 @@
             </div>
             <div class="serv-card__text">
               <a class="txt-20" href="#!">Языковые лагеря и курсы</a>
-              <p>Детские лагеря за рубежом и языковые курсы для взрослых, подготовка к поступлению в...</p>
+              <p> Детские лагеря за рубежом и языковые курсы для взрослых, подготовка к поступлению в...</p>
               <a class="round-arrow" href="#!">
                 <svg class="svg-arrow">
                   <use href="./img/spriteSvg.svg#svg-arrow"></use>
@@ -964,7 +964,7 @@
             </div>
             <div class="serv-card__text">
               <a class="txt-20" href="#!">Постдипломное образование и MBA</a>
-              <p>Выбор вуза, подготовка и поступление на MBA, в ординатуру, магистратуру...</p>
+              <p> Выбор вуза, подготовка и поступление на MBA, в ординатуру, магистратуру...</p>
               <a class="round-arrow" href="#!">
                 <svg class="svg-arrow">
                   <use href="./img/spriteSvg.svg#svg-arrow"></use>
@@ -1334,7 +1334,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo1.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo1.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1344,7 +1344,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo2.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo2.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1356,7 +1356,7 @@
             <div class="flex-row">
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo3.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo3.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1366,7 +1366,7 @@
               </div>
               <div class="accredit-card">
                 <div class="accredit-logo">
-                  <img src="./img/accredit/logo4.webp" height="80" alt="logo" />
+                  <img class="lazy" src="./img/accredit/logo4.webp" height="80" alt="logo" />
                 </div>
                 <div class="accredit__text">
                   <p>
@@ -1461,7 +1461,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -1469,7 +1469,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>

@@ -288,16 +288,6 @@
           <!--======RIGHT COLUMN =====-->
           <div class="header-column">
             <!--==== выбор языка ===-->
-            <div class="custom-select custom-select--lang">
-              <input type="text" value="Ru">
-              <!--=== спислк с языками===-->
-              <div class="custom-select__drop">
-                <div class="custom-select__list">
-                  <a href="#!">En</a>
-                  <a href="#!">Ru</a>
-                </div>
-              </div>
-            </div>
             <a class="contact-item" href="tel:88005114993">8 (800) 511-4993</a>
           </div>
         </div>
@@ -789,25 +779,34 @@
           </div>
           <!--==== right column ====-->
           <div class="aside-grid__content offset-top-48">
-            <!--=====INNER MENU =====-->
-            <div class="inner-menu">
+            <div class="inner-menu has-hide">
+              <div class="h4 mb-20"> Содержание</div>
               <nav>
-                <a href="#!">Учебные заведения</a>
-                <a href="#importance-choice">Почему важно правильно подобрать учебное заведение</a>
-                <a href="#feature-education">Особенности образования в разных странах</a>
-                <a href="#education-switzerland">Обучение в Швейцарии</a>
-                <a href="#education-usa">Обучение в США</a>
-                <a href="#education-uk">Обучение в Англии</a>
-                <a href="#education-germany">Обучение в Германии</a>
-                <a href="#cost-edu-board">Стоимость обучения за границей</a>
-                <a href="#cost-edu-secondary">Стоимость среднего образования</a>
-                <a href="#cost-edu-higher">Стоимость высшего образования в Европе и Америке</a>
-                <a href="#edu-prospects">Перспективы студента после обучения за рубежом</a>
-                <a href="#edu-choosing">Выбор учебного заведения с Allterra Education</a>
+                <a href="#!">17 плюсов частных школ-пансионов за рубежом</a>
+                <a href="#!">Основные виды школ за рубежом</a>
+                <a href="#!">Международные школы и колледжи</a>
+                <a href="#!">Уровни образования в зарубежной школе</a>
+                <a href="#!">Основные виды программ в школах за рубежом</a>
+                <a href="#!">Стоимость обучения в школах за рубежом</a>
+                <a class="hide-item" href="#education-germany">Обучение в Германии</a>
+                <a class="hide-item" href="#cost-edu-board">Стоимость обучения за границей</a>
+                <a class="hide-item" href="#cost-edu-secondary">Стоимость среднего образования</a>
+                <a class="hide-item" href="#cost-edu-higher">Стоимость высшего образования в Европе и Америке</a>
+                <a class="hide-item" href="#edu-prospects">Перспективы студента после обучения за рубежом</a>
+                <a class="hide-item" href="#edu-choosing">Выбор учебного заведения с Allterra Education</a>
+                <!--====btn show more ===-->
+                <button class="accent-link btn-more" type="button">Смотреть все
+                  <svg class="svg-chevron-down">
+                    <use href="./img/spriteSvg.svg#svg-chevron-down"></use>
+                  </svg>
+                </button>
               </nav>
             </div>
             <!--====== cards section====-->
             <article class="scool-cards-wrapper">
+              <div class="preview-text mb-48">
+                <p>Максимальное разнообразие учебных программ лежит в основе обучения в школах Швейцарии. В зависимости от того, в каком кантоне находится школа, можно найти и немецкий Abitur, и французский бакалавриат, а также международный курс International Baccalaureate (IB), который позволяет получать высшее образование за рубежом в большинстве европейских стран. В дополнение многие швейцарские школы имеют статус международных и предлагают американские и британские программы обучения.</p>
+              </div>
               <div class="header-group">
                 <div class="h3">Учебные заведения</div>
                 <!--===== toggles =====-->
@@ -828,7 +827,10 @@
                 <div class="scool-card">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/scools/scool-picture@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1006,7 +1008,10 @@
                 <div class="scool-card">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/scools/scool-picture@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1290,7 +1295,10 @@
                 <div class="scool-card">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/scools/scool-picture@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1468,7 +1476,10 @@
                 <div class="scool-card">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/scools/scool-picture@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -1752,7 +1763,10 @@
                 <div class="scool-card">
                   <!--===== картинка =====-->
                   <div class="scool-picture">
-                    <img src="./img/scools/scool-picture.webp" width="324" height="212" alt="img" />
+                    <picture>
+                      <source srcset="./img/scools/scool-picture@2x.webp" media="(min-resolution: 192dpi)" width="324" height="212" type="image/webp" />
+                      <img class="lazy" src="./img/scools/scool-picture.webp" width="324" height="212" alt="image" />
+                    </picture>
                     <div class="rating-label">9.6</div>
                   </div>
                   <!--====верхний ряд, видимый =====-->
@@ -2075,7 +2089,7 @@
               <p>Выбор учебного заведения за границей — важный шаг. Каждая школа Великобритании и каждый университет США имеют свои традиции и особенности обучения. Эксперты по международному образованию Allterra Education помогут вам выбирать вариант, который максимально соответствует интересам, потребностям, способностям и характеру будущего студента.</p>
               <p>Правильный выбор упрощает поступление в желаемую школу или университет, учитывая сильные стороны поступающего. Наконец, если учебное заведение за рубежом вам действительно подходит, учиться в нём будет максимально комфортно.</p>
               <p>При подборе вуза или школы за рубежом мы учитываем и позицию учебного заведения в мировых рейтингах и результаты, которые демонстрируют выпускники. Это важно для практического применения полученного образования и первых шагов в карьере молодого специалиста.
-                <br>Поиск и анализ информации требует значительных затрат времени. В каталоге учебных заведений Allterra Education представлены школы, университеты и языковые курсы за рубежом, которые проверены многолетним сотрудничеством и отличными результатами выпускников.
+                <br> Поиск и анализ информации требует значительных затрат времени. В каталоге учебных заведений Allterra Education представлены школы, университеты и языковые курсы за рубежом, которые проверены многолетним сотрудничеством и отличными результатами выпускников.
               </p>
             </article>
             <!--====== importance-choice ====-->
@@ -2363,7 +2377,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom blog-card--full">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/1@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/1.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2380,7 +2397,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/2.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/2@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/2.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2397,7 +2417,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/3.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/3@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/3.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2414,7 +2437,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/4.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/4@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/4.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2431,7 +2457,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/1.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/1@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/1.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2448,7 +2477,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/2.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/2@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/2.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2465,7 +2497,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/3.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/3@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/3.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2482,7 +2517,10 @@
               <div class="swiper-slide">
                 <div class="blog-card img-zoom">
                   <div class="blog-card__img">
-                    <img class="wh-100 lazy" src="./img/blog/4.webp" width="295" height="194" alt="img" />
+                    <picture>
+                      <source srcset="./img/blog/4@2x.webp" media="(min-resolution: 192dpi)" width="295" height="194" type="image/webp" />
+                      <img class="lazy wh-100" src="./img/blog/4.webp" width="295" height="194" alt="image" />
+                    </picture>
                   </div>
                   <a class="blog-card__text" href="#!">
                     <div class="blog-card__info txt-14">
@@ -2592,7 +2630,7 @@
             <address class="contact-group">
               <p>
                 <strong>Москва</strong>
-                <br>ул. Тверская, д. 7
+                <br> ул. Тверская, д. 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
@@ -2600,7 +2638,7 @@
             <address class="contact-group">
               <p>
                 <strong>Санкт-Петербург</strong>
-                <br>ул. Введенского канала, 7
+                <br> ул. Введенского канала, 7
                 <br>
                 <a class="accent-link" href="#!">На карте</a>
               </p>
